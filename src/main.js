@@ -7,25 +7,54 @@ import backgroundMap from "./backgroundMap";
 export default createEodash((store) => ({
   id: "template-id",
   stacEndpoint:
-    "https://eodash.github.io/catalog-template/template_catalog/catalog.json",
+    "https://esa-eodash.github.io/eodashboard-catalog/trilateral/catalog.json",
   routes: [],
   brand: {
-    name: "Dashboard",
+    name: " EARTH OBSERVING DASHBOARD",
+    shortName: "eodashboard",
     font: {
-      family: "Poppins",
+      link: "style.css",
+      family: "Roboto",
     },
+    logo: "logo.png",
     theme: {
       colors: {
-        primary: "#880808",
-        secondary: "#AA4A44",
-        background: "#d3d3d3",
-        surface: "#d3d3d3",
+        primary: "#333",
+        secondary: "#333",
+        background: "#fff",
+        surface: "#fff",
       },
     },
+    meta: {
+      title: "Earth observing dashboard",
+      content: 'Dashboard for ESA, NASA, JAXA EO data examples'
+    }
   },
   template: {
     gap: 6,
-    background: backgroundMap(store.states),
-    widgets: [tools, basedOnWms(store.states), container(store.states)],
+    background: {
+      id: Symbol(),
+      type: "internal",
+      widget: {
+        name: 'EodashMap'
+      }
+    },
+    widgets: [
+      tools,
+      {
+        id: Symbol(),
+        type: "internal",
+        title: "datepicker",
+        layout: { x: 5, y: 11, w: 2, h: 1 },
+        widget: {
+          name: 'EodashDatePicker',
+          props: {
+            inline: true,
+          },
+        }
+      },
+      basedOnWms(store.states),
+      // container(store.states)
+    ],
   },
 }));
