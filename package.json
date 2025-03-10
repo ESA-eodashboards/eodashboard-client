@@ -1,26 +1,16 @@
 {
-  "name": "config-template",
-  "version": "1.0.0",
-  "description": "",
+  "name": "eodashboard-client",
   "type": "module",
   "scripts": {
-    "dev": "eodash dev",
-    "build": "eodash build",
-    "preview": "eodash preview",
-    "lint": "eslint .",
-    "format": "prettier . --write"
+    "start": "npm run dev",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "dependencies": {
-    "@eodash/eodash": "^5.0.0-alpha.2.14",
-    "@eox/map": "^1.11.2",
-    "@eox/stacinfo": "^0.3.3"
-  },
-  "author": "",
-  "devDependencies": {
-    "@eox/eslint-config": "^1.0.1",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3"
+    "@eodash/eodash": "^5.0.0-rc.2.5",
+    "@eox/storytelling": "^1.5.4",
+    "mustache": "^4.2.0",
+    "vitepress": "^1.6.3"
   }
 }
