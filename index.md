@@ -7,7 +7,31 @@ hero:
   tagline: "Global environmental changes observed by NASA, ESA, and JAXA"
   text: ""
 ---
+<script setup>
+    import { ref, onMounted } from 'vue';
+    import { withBase } from 'vitepress';
 
+    const items = ref([]);
+
+    onMounted(async () => {
+      try {
+        const response = await fetch('https://esa-eodash.github.io/eodashboard-narratives/narratives.json');
+        items.value = await response.json();
+      } catch (error) {
+        console.error('Error fetching JSON:', error);
+      }
+    });
+</script>
+
+<eox-itemfilter
+  aggregateResults="themes"
+  :items="items"
+  titleProperty="title"
+  imageProperty="image"
+  subTitleProperty="subtitle"
+  :filterProperties="[]"
+  resultType="cards"
+></eox-itemfilter>
 
 The European Space Agency (ESA), Japan Aerospace Exploration Agency (JAXA), and National Aeronautics and Space Administration (NASA) have combined their resources, technical knowledge, and expertise to produce this Earth Observing Dashboard, which strengthens our understanding of global environmental changes and other societal challenges impacting our planet.
 
