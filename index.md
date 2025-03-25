@@ -21,6 +21,10 @@ hero:
         console.error('Error fetching JSON:', error);
       }
     });
+  // Click event handler
+  const handleResultClick = (evt) => {
+    alert(`${evt.detail.file} clicked!`);
+  };
 </script>
 
 <eox-itemfilter
@@ -31,6 +35,7 @@ hero:
   subTitleProperty="subtitle"
   :filterProperties="[]"
   resultType="cards"
+  @click="handleResultClick"
 ></eox-itemfilter>
 
 The European Space Agency (ESA), Japan Aerospace Exploration Agency (JAXA), and National Aeronautics and Space Administration (NASA) have combined their resources, technical knowledge, and expertise to produce this Earth Observing Dashboard, which strengthens our understanding of global environmental changes and other societal challenges impacting our planet.
