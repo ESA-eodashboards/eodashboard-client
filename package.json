@@ -10,7 +10,7 @@
   "dependencies": {
     "@eodash/eodash": "^5.0.0-rc.2.5",
     "@eox/itemfilter": "^1.8.0",
-    "@eox/storytelling": "^1.5.4",
+    "@eox/storytelling": "^1.7.1",
     "mustache": "^4.2.0",
     "vitepress": "^1.6.3"
   }

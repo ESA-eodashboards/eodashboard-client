@@ -3,7 +3,7 @@
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  */
 
- .VPContent {
+.VPContent {
   max-height: 100vh;
   overflow-y: scroll;
 }

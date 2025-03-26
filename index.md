@@ -13,8 +13,9 @@ hero:
 
 <script setup>
   import { ref, onMounted } from 'vue';
-  import { withBase } from 'vitepress';
+  import { withBase, useRouter } from 'vitepress';
 
+  const router = useRouter();
   const items = ref([]);
 
   const filterProps = [{
@@ -39,20 +40,20 @@ hero:
 
   // Click event handler
   const handleResultClick = (evt) => {
-    alert(`${evt.detail.file} clicked!`);
+    router.go(`/storyviewer/?storyurl=${evt.detail.file}`);
   };
 </script>
 
 <client-only>
-<eox-itemfilter
-  :items="items"
-  titleProperty="title"
-  imageProperty="image"
-  subTitleProperty="subtitle"
-  :filterProperties="filterProps"
-  resultType="cards"
-  @select="handleResultClick"
-></eox-itemfilter>
+  <eox-itemfilter
+    :items="items"
+    titleProperty="title"
+    imageProperty="image"
+    subTitleProperty="subtitle"
+    :filterProperties="filterProps"
+    resultType="cards"
+    @select="handleResultClick"
+  ></eox-itemfilter>
 </client-only>
 
 The European Space Agency (ESA), Japan Aerospace Exploration Agency (JAXA), and National Aeronautics and Space Administration (NASA) have combined their resources, technical knowledge, and expertise to produce this Earth Observing Dashboard, which strengthens our understanding of global environmental changes and other societal challenges impacting our planet.
