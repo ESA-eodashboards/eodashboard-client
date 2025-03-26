@@ -8,10 +8,12 @@ layout: page
     if(window && !customElements.get('eox-map')) import("@eox/map")
     if(window && !customElements.get('eox-jsonform')) import("@eox/jsonform");
 
+    let storyfile;
     let storyurl;
     if (typeof window !== 'undefined' && 'URLSearchParams' in window) {
         const searchParams = new URLSearchParams(window.location.search);
-        storyurl = searchParams.get('storyurl');
+        storyfile = searchParams.get('id');
+        storyurl = `https://esa-eodash.github.io/eodashboard-narratives/${storyfile}.md`;
     }
 </script>
 
