@@ -5,3 +5,4 @@ node_modules
 .eodash/cache
 .eodash/dist
 .DS_Store
+.eodash
