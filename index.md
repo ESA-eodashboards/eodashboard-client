@@ -42,7 +42,7 @@ hero:
   const handleResultClick = (evt) => {
     const sections = evt.detail.file.split("/");
     const filename = sections[sections.length-1].split(".")[0];
-    router.go(`/storyviewer/?id=${filename}`);
+    router.go(`./storyviewer/?id=${filename}`);
   };
 </script>
 
