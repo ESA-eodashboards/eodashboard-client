@@ -3,6 +3,10 @@
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  */
 
+ .VPContent {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
 eo-dash a[href="https://eox.at"] img
 {
   display: unset;

@@ -43,6 +43,7 @@ hero:
   };
 </script>
 
+<client-only>
 <eox-itemfilter
   :items="items"
   titleProperty="title"
@@ -52,6 +53,7 @@ hero:
   resultType="cards"
   @select="handleResultClick"
 ></eox-itemfilter>
+</client-only>
 
 The European Space Agency (ESA), Japan Aerospace Exploration Agency (JAXA), and National Aeronautics and Space Administration (NASA) have combined their resources, technical knowledge, and expertise to produce this Earth Observing Dashboard, which strengthens our understanding of global environmental changes and other societal challenges impacting our planet.
 
