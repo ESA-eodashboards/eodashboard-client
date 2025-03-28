@@ -31,7 +31,7 @@ hero:
 
   onMounted(async () => {
     try {
-      const response = await fetch('https://esa-eodash.github.io/eodashboard-narratives/narratives.json');
+      const response = await fetch('https://esa-eodashboards.github.io/eodashboard-narratives/narratives.json');
       items.value = await response.json();
     } catch (error) {
       console.error('Error fetching JSON:', error);
