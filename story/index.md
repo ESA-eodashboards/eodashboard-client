@@ -13,7 +13,7 @@ layout: page
     if (typeof window !== 'undefined' && 'URLSearchParams' in window) {
         const searchParams = new URLSearchParams(window.location.search);
         storyfile = searchParams.get('id');
-        storyurl = `https://esa-eodash.github.io/eodashboard-narratives/${storyfile}.md`;
+        storyurl = `https://esa-eodashboards.github.io/eodashboard-narratives/${storyfile}.md`;
     }
 </script>
 
