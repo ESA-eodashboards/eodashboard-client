@@ -10,7 +10,7 @@ if (searchParams.has("catalog")) {
 
 export default {
   id: "demo",
-  stacEndpoint: "https://esa-eodash.github.io/eodashboard-catalog/trilateral/catalog.json",
+  stacEndpoint: "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
   brand: {
     noLayout: true,
     name: "Earth Observing Dashboard",
