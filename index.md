@@ -21,13 +21,19 @@ hero:
   const filterProps = [{
     "keys": [
       "title",
-      "subtitle"
+      "subtitle",
+      "theme"
     ],
     "title": "Search",
     "type": "text",
     "placeholder": "Type Something...",
     "expanded": true
-  }];
+  }, {
+    "key": 'theme',
+    "title": 'Theme',
+    "expanded": true
+  }
+  ];
 
   onMounted(async () => {
     try {
