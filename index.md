@@ -11,6 +11,9 @@ hero:
   if(window && !customElements.get('eox-itemfilter')) import("@eox/itemfilter");
 </script>
 
+Please explore the Stories below to get acquainted with the various datasets from the agencies and insights that can be won from them.
+If you are interested in further science, events, or other information we invite you to explore the site and available sections!
+
 <script setup>
   import { ref, onMounted } from 'vue';
   import { withBase, useRouter } from 'vitepress';
@@ -38,7 +41,9 @@ hero:
   onMounted(async () => {
     try {
       const response = await fetch('https://esa-eodashboards.github.io/eodashboard-narratives/narratives.json');
-      items.value = await response.json();
+      const results = await response.json();
+      results.forEach((res)=>{res.image = 'https://esa-eodashboards.github.io/eodashboard-narratives/'+res.image});
+      items.value = results;
     } catch (error) {
       console.error('Error fetching JSON:', error);
     }
@@ -61,6 +66,7 @@ hero:
     :filterProperties="filterProps"
     resultType="cards"
     @select="handleResultClick"
+    style="--form-flex-direction: row"
   ></eox-itemfilter>
 </client-only>
 

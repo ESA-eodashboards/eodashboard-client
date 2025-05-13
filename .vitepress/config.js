@@ -21,10 +21,11 @@ export default defineConfig({
     logo: "/assets/trilateral_logo.svg",
     nav: [
       { text: "Home", link: "/" },
-      { text: "Dashboard", link: "/uc1dashboard/" },
-      // { text: 'UC2 Dashboard', link: '/uc2dashboard/' },
-      // { text: 'Stories', link: '/stories/' },
-      { text: "Editor", link: "/editor/" },
+      { text: "News & Updates", link: "/news_updates" },
+      { text: "Engage", link: "/engage" },
+      { text: "Science", link: "/science" },
+      { text: "Explore", link: "/explore" },
+      { text: "About", link: "/about" },
     ],
   },
 });

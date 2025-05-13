@@ -20,5 +20,6 @@ layout: page
 <eox-storytelling 
     v-if="storyurl" 
     :markdown-url="storyurl"
+    show-nav
     style="overflow-y: auto; height: calc(100vh - 64px)">
 </eox-storytelling>
