@@ -36,9 +36,7 @@
 
   // Click event handler
   const handleResultClick = (evt) => {
-    const sections = evt.detail.file.split("/");
-    const filename = sections[sections.length-1].split(".")[0];
-    router.go(withBase(`/notebook?id=${filename}`));
+    router.go(withBase(`/notebook?id=${evt.detail.link}`));
   };
 </script>
 
