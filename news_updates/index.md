@@ -1,6 +1,11 @@
----
+# News & Updates
 
----
+## Upcoming Events
+
+The EO Dashboard is organising and supporting hands-on workshops and global open competitions, including the NASA Space Apps, the EO Dashboard Hackathon and IGARSS Tutorials, workshops at FOSS4G, and many others.
+
+* Upcoming tutorial in the [Living Planet Symposium 2025](https://lps25.esa.int/) in Vienna on June 22nd!
+  D.03.18 TUTORIAL - From Earth Science to Storytelling with EO Dashboard
 
 ## News
 

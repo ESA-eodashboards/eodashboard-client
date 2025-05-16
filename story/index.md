@@ -15,10 +15,29 @@ layout: page
         storyfile = searchParams.get('id');
         storyurl = `https://esa-eodashboards.github.io/eodashboard-narratives/${storyfile}.md`;
     }
+    if (typeof window !== 'undefined') {
+        function injectStyleToShadowRoot(selector, css) {
+            const interval = setInterval(() => {
+            const el = document.querySelector(selector);
+            if (el && el.shadowRoot) {
+                clearInterval(interval);
+                const style = document.createElement('style');
+                style.textContent = css;
+                el.shadowRoot.appendChild(style);
+            }
+            }, 100);
+        }
+
+        injectStyleToShadowRoot('eox-storytelling', `
+            .navigation {
+               top: 60px !important;
+            }
+        `);
+    }
 </script>
 
 <eox-storytelling 
+    show-nav
     v-if="storyurl" 
-    :markdown-url="storyurl"
-    style="overflow-y: auto; height: calc(100vh - 64px)">
+    :markdown-url="storyurl">
 </eox-storytelling>

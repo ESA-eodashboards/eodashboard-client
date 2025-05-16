@@ -22,9 +22,8 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "News & Updates", link: "/news_updates" },
-      { text: "Engage", link: "/engage" },
-      { text: "Science", link: "/science" },
-      { text: "Explore", link: "/explore" },
+      { text: "Resources", link: "/resources" },
+      { text: "Dashboard", link: "/dashboard" },
       { text: "About", link: "/about" },
     ],
   },
