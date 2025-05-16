@@ -29,7 +29,7 @@ If you are interested in further science, events, or other information we invite
     ],
     "title": "Search",
     "type": "text",
-    "placeholder": "Type Something...",
+    "placeholder": "Search in title...",
     "expanded": true
   }, {
     "key": 'theme',
@@ -63,6 +63,7 @@ If you are interested in further science, events, or other information we invite
     titleProperty="title"
     imageProperty="image"
     subTitleProperty="subtitle"
+    aggregateResults="theme"
     :filterProperties="filterProps"
     resultType="cards"
     @select="handleResultClick"
