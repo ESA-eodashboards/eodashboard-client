@@ -16,7 +16,7 @@
     ],
     "title": "Search",
     "type": "text",
-    "placeholder": "Type Something...",
+    "placeholder": "Search in title...",
     "expanded": true
   }
   ];
