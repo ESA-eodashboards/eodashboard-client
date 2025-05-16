@@ -21,12 +21,11 @@ hero:
   const filterProps = [{
     "keys": [
       "title",
-      "subtitle",
-      "theme"
+      "subtitle"
     ],
     "title": "Search",
     "type": "text",
-    "placeholder": "Type Something...",
+    "placeholder": "Search in title or subtitle",
     "expanded": true
   }, {
     "key": 'theme',
