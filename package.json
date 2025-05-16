@@ -8,8 +8,8 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@eodash/eodash": "^5.0.0-rc.2.5",
-    "@eox/itemfilter": "^1.8.0",
+    "@eodash/eodash": "^5.0.0",
+    "@eox/itemfilter": "1.8.0",
     "@eox/storytelling": "^1.7.1",
     "mustache": "^4.2.0",
     "vitepress": "^1.6.3"
