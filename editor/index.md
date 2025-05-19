@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<script setup>
+<script setup client-only>
     if(window && !customElements.get('eox-map')) import("@eox/map");
     if(window && !customElements.get('eox-jsonform')) import("@eox/jsonform");
     import("@eox/map/dist/eox-map-advanced-layers-and-sources");
