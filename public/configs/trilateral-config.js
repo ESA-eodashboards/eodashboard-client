@@ -1,11 +1,13 @@
-let stacEndpoint =
-  "https://esa-eodash.github.io/RACE-catalog/RACE/catalog.json";
-const searchParams = new URLSearchParams(window.location.search);
-if (searchParams.has("catalog")) {
-  stacEndpoint = stacEndpoint.replace(
-    "catalog/",
-    `catalog/pr-preview/${searchParams.get("catalog")}/`,
-  );
+if (!import.meta.env.SSR) {
+  let stacEndpoint =
+    "https://esa-eodash.github.io/RACE-catalog/RACE/catalog.json";
+  const searchParams = new URLSearchParams(window.location.search);
+  if (searchParams.has("catalog")) {
+    stacEndpoint = stacEndpoint.replace(
+      "catalog/",
+      `catalog/pr-preview/${searchParams.get("catalog")}/`,
+    );
+  }
 }
 
 export default {

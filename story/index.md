@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<script setup>
+<script setup client-only>
     import { onMounted } from 'vue';
     import { withBase } from 'vitepress';
     if(window && !customElements.get('eox-map')) import("@eox/map")

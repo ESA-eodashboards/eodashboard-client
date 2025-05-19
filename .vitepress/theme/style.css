@@ -10,6 +10,11 @@ body {
   position: absolute;
 }
 
+/* fix for eodash setting the body to overflow hidden */
+:root {
+  overflow-y: auto!important;
+}
+
 
 eo-dash a[href="https://eox.at"] img
 {
