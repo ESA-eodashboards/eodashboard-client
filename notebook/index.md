@@ -3,18 +3,18 @@ layout: page
 ---
 
 <script setup>
-import { onMounted, ref } from 'vue'
+  import { onMounted, ref } from 'vue'
 
-const iframeSrc = ref('')
-const paramName = 'id' 
+  const iframeSrc = ref('');
+  const paramName = 'id'; 
 
-onMounted(() => {
-  const params = new URLSearchParams(window.location.search)
-  const id = params.get(paramName)
-  if (id) {
-    iframeSrc.value = 'https://esa-eodashboards.github.io/eodashboard-notebooks/'+(id)
-  }
-})
+  onMounted(() => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get(paramName);
+    if (id) {
+      iframeSrc.value = 'https://esa-eodashboards.github.io/eodashboard-notebooks/'+(id);
+    }
+  })
 </script>
 
 <iframe
