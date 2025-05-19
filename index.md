@@ -29,7 +29,7 @@ If you are interested in further science, events, or other information we invite
     ],
     "title": "Search",
     "type": "text",
-    "placeholder": "Search in title...",
+    "placeholder": "Search in title or subtitle",
     "expanded": true
   }, {
     "key": 'theme',
