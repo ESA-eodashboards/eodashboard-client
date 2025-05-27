@@ -13,6 +13,7 @@ export default defineConfig({
     },
   },
   vite:{
+    envPrefix:["VITE_", "EODASH_"],
     server:{
       allowedHosts: true
     }
