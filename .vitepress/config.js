@@ -24,7 +24,7 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "News & Updates", link: "/news_updates" },
       { text: "Resources", link: "/resources" },
-      { text: "Dashboard", link: "/dashboard" },
+      { text: "Dashboard", link: "/explore" },
       { text: "About", link: "/about" },
     ],
   },
