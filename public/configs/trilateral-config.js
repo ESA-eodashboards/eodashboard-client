@@ -12,6 +12,7 @@ if (searchParams.has("catalog")) {
 
 export default {
   id: "demo",
+  useSubCode: true,
   stacEndpoint: "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
   brand: {
     noLayout: true,
