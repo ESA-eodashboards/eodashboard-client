@@ -45,6 +45,154 @@ export default {
     footerText: "Demo configuration of eodash client",
   },
   templates: {
+    expert: {
+      loading: {
+        id: Symbol(),
+        type: "web-component",
+        widget: {
+          // https://uiball.com/ldrs/
+          link: "https://cdn.jsdelivr.net/npm/ldrs/dist/auto/mirage.js",
+          tagName: "l-mirage",
+          properties: {
+            class: "align-self-center justify-self-center",
+            size: "120",
+            speed: "2.5",
+            color: "#004170",
+          },
+        },
+      },
+      background: {
+        id: "background-map",
+        type: "internal",
+        widget: {
+          name: "EodashMap",
+          properties: {
+            enableCompare: true,
+          },
+        },
+      },
+      widgets: [
+        {
+          id: Symbol(),
+          type: "internal",
+          title: "Tools",
+          layout: { x: 0, y: 0, w: 3, h: 1 },
+          widget: {
+            name: "EodashTools",
+            properties: {
+              layoutTarget: "light",
+              layoutIcon: "M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z",
+              itemFilterConfig: {
+                enableHighlighting: false,
+                filterProperties: [
+                  {
+                    keys: ["title", "themes"],
+                    title: "Search",
+                    placeholder: "Search by name",
+                    type: "text",
+                    expanded : true
+                  },
+                  {
+                    key: "themes",
+                    title: "Themes",
+                    placeholder: "Filter by theme",
+                    type: "multiselect",
+                    expanded : true
+                  },
+                  {
+                    key: "tags",
+                    title: "Tags",
+                    placeholder: "Filter by tags",
+                    type: "multiselect",
+                    expanded : true
+                  },
+                ],
+                resultType: "cards",
+                subTitleProperty: "subtitle",
+                imageProperty: "thumbnail",
+                aggregateResults: "collection_group",
+                style: {
+                  "--form-flex-direction": "row",
+                },
+              },
+            },
+          },
+        },
+        {
+          id: Symbol(),
+          type: "internal",
+          title: "Layers",
+          layout: { x: 0, y: 1, w: 3, h: 6 },
+          widget: {
+            name: "EodashLayerControl",
+          },
+        },
+        {
+          defineWidget: (selectedSTAC) => {
+            return selectedSTAC
+              ? {
+                  id: "Information",
+                  title: "Information",
+                  layout: { x: 9, y: 0, w: 3, h: 6 },
+                  type: "internal",
+                  widget: {
+                    name: "EodashStacInfo",
+                  },
+                }
+              : null;
+          },
+        },
+        {
+          defineWidget: (selectedSTAC) => {
+            return selectedSTAC
+              ? {
+                  id: "Datepicker",
+                  type: "internal",
+                  layout: { x: 5, y: 11, w: 2, h: 1 },
+                  title: "Date",
+                  widget: {
+                    name: "EodashDatePicker",
+                    properties: {
+                      hintText: `<b>Hint:</b> closest available date is displayed <br />
+                            on map (see Analysis Layers)`,
+                      toggleCalendar: true,
+                    },
+                  },
+                }
+              : null;
+          },
+        },
+        {
+          defineWidget: (selected) => {
+            return selected
+              ? {
+                  id: "Buttons",
+                  layout: { x: 8, y: 0, w: 1, h: 1 },
+                  title: "Buttons",
+                  type: "internal",
+                  widget: {
+                    name: "EodashMapBtns",
+                  },
+                }
+              : null;
+          },
+        },
+        {
+          defineWidget: (selectedSTAC) =>
+            selectedSTAC?.links.some((l) => l.rel === "service")
+              ? {
+                  id: "Processes",
+                  type: "internal",
+                  title: "Processes",
+                  layout: { x: 9, y: 6, w: 3, h: 6 },
+                  widget: {
+                    name: "EodashProcess",
+                  },
+                }
+              : null,
+        },
+      ],
+    },
     light: {
       gap: 16,
       loading: {
@@ -170,131 +318,6 @@ export default {
         {
           defineWidget: (selectedSTAC) =>
             (selectedSTAC?.links.some((l) => l.endpointtype === "GeoDB" ) || selectedSTAC?.locations)
-              ? {
-                  id: "Processes",
-                  type: "internal",
-                  title: "Processes",
-                  layout: { x: 9, y: 6, w: 3, h: 5 },
-                  widget: {
-                    name: "EodashProcess",
-                  },
-                }
-              : null,
-        },
-      ],
-    },
-    expert: {
-      loading: {
-        id: Symbol(),
-        type: "web-component",
-        widget: {
-          // https://uiball.com/ldrs/
-          link: "https://cdn.jsdelivr.net/npm/ldrs/dist/auto/mirage.js",
-          tagName: "l-mirage",
-          properties: {
-            class: "align-self-center justify-self-center",
-            size: "120",
-            speed: "2.5",
-            color: "#004170",
-          },
-        },
-      },
-      background: {
-        id: "background-map",
-        type: "internal",
-        widget: {
-          name: "EodashMap",
-          properties: {
-            enableCompare: true,
-          },
-        },
-      },
-      widgets: [
-        {
-          id: Symbol(),
-          type: "internal",
-          title: "Tools",
-          layout: { x: 0, y: 0, w: 3, h: 1 },
-          widget: {
-            name: "EodashTools",
-            properties: {
-              layoutTarget: "light",
-              layoutIcon: "M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z",
-              itemFilterConfig: {
-                enableHighlighting: false,
-                resultType: "cards",
-                subTitleProperty: "subtitle",
-                imageProperty: "thumbnail",
-                aggregateResults: "collection_group",
-                style: {
-                  "--form-flex-direction": "row",
-                },
-              },
-            },
-          },
-        },
-        {
-          id: Symbol(),
-          type: "internal",
-          title: "Layers",
-          layout: { x: 0, y: 1, w: 3, h: 6 },
-          widget: {
-            name: "EodashLayerControl",
-          },
-        },
-        {
-          defineWidget: (selectedSTAC) => {
-            return selectedSTAC
-              ? {
-                  id: "Information",
-                  title: "Information",
-                  layout: { x: 9, y: 0, w: 3, h: 6 },
-                  type: "internal",
-                  widget: {
-                    name: "EodashStacInfo",
-                  },
-                }
-              : null;
-          },
-        },
-        {
-          defineWidget: (selectedSTAC) => {
-            return selectedSTAC
-              ? {
-                  id: "Datepicker",
-                  type: "internal",
-                  layout: { x: 5, y: 11, w: 2, h: 1 },
-                  title: "Date",
-                  widget: {
-                    name: "EodashDatePicker",
-                    properties: {
-                      hintText: `<b>Hint:</b> closest available date is displayed <br />
-                            on map (see Analysis Layers)`,
-                      toggleCalendar: true,
-                    },
-                  },
-                }
-              : null;
-          },
-        },
-        {
-          defineWidget: (selected) => {
-            return selected
-              ? {
-                  id: "Buttons",
-                  layout: { x: 8, y: 0, w: 1, h: 2 },
-                  title: "Buttons",
-                  type: "internal",
-                  widget: {
-                    name: "EodashMapBtns",
-                  },
-                }
-              : null;
-          },
-        },
-        {
-          defineWidget: (selectedSTAC) =>
-            selectedSTAC?.links.some((l) => l.rel === "service")
               ? {
                   id: "Processes",
                   type: "internal",
