@@ -111,6 +111,10 @@ export default {
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
                 aggregateResults: "collection_group",
+                styleOverride: `
+                  eox-itemfilter-expandcontainer {
+                    max-height: 600px;
+                  }`,
                 style: {
                   "--form-flex-direction": "row",
                 },
