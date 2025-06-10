@@ -111,10 +111,6 @@ export default {
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
                 aggregateResults: "collection_group",
-                styleOverride: `
-                  eox-itemfilter-expandcontainer {
-                    max-height: 600px;
-                  }`,
                 style: {
                   "--form-flex-direction": "row",
                 },
@@ -183,7 +179,7 @@ export default {
         },
         {
           defineWidget: (selectedSTAC) =>
-            selectedSTAC?.links.some((l) => l.rel === "service")
+            window.eodashStore.actions.includesProcess(selectedSTAC)
               ? {
                   id: "Processes",
                   type: "internal",
@@ -321,7 +317,7 @@ export default {
         },
         {
           defineWidget: (selectedSTAC) =>
-            (selectedSTAC?.links.some((l) => l.endpointtype === "GeoDB" ) || selectedSTAC?.locations)
+            window.eodashStore.actions.includesProcess(selectedSTAC)
               ? {
                   id: "Processes",
                   type: "internal",
@@ -428,7 +424,7 @@ export default {
         },
         {
           defineWidget: (selectedSTAC) =>
-            selectedSTAC?.links.some((l) => l.rel === "service")
+            window.eodashStore.actions.includesProcess(selectedSTAC)
               ? {
                   id: Symbol(),
                   type: "internal",
