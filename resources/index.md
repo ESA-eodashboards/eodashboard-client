@@ -25,8 +25,12 @@
     try {
       const response = await fetch('https://esa-eodashboards.github.io/eodashboard-notebooks/notebooks.json');
       const results = await response.json();
-      // Adapt image urls
-      results.forEach((res)=>{res.image = 'https://esa-eodashboards.github.io/eodashboard-notebooks/'+res.image});
+      results.forEach((res)=>{
+        if (res.image.startsWith('build')){
+          // Adapt image urls in case locally built and not absolute
+          res.image = 'https://esa-eodashboards.github.io/eodashboard-notebooks/'+res.image
+        }
+        });
       items.value = results;
 
     } catch (error) {
@@ -102,5 +106,5 @@ The EO Dashboard application is based on the [eodash](https://eodash.org/) ecosy
 
 ## Data
 
-* [EO Dashboard Data Collections](https://github.com/eurodatacube/eodash-catalog/tree/main/collections)
-* [STAC Catalogue](https://radiantearth.github.io/stac-browser/#/external/eurodatacube.github.io/eodash-catalog/trilateral/catalog.json?.language=en)
+* [EO Dashboard Data Collections](https://github.com/ESA-eodashboards/eodashboard-catalog/tree/main/collections)
+* [STAC Catalogue](https://radiantearth.github.io/stac-browser/#/external/ESA-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json?.language=en)
