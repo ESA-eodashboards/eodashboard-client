@@ -1,10 +1,11 @@
 import EOX from "@eox/pages-theme-eox";
-import { h } from "vue";
 
 /** @type {import('vitepress').Theme} */
 export default {
   ...EOX,
   async enhanceApp({ app, router, siteData }) {
+    EOX.enhanceApp({ app, router, siteData });
+    
     if (!import.meta.env.SSR) {
       await import("./style.css");
       await import("@eodash/eodash/webcomponent");

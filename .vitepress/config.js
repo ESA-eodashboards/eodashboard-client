@@ -3,7 +3,7 @@ import baseConfig from "@eox/pages-theme-eox/config";
 import { name as packageName } from "../package.json";
 
 const brandId = packageName.replace("-client", "");
-console.log(baseConfig(brandId));
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   extends: baseConfig(brandId),
