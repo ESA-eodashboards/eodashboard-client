@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: false
 ---
 
 <script setup>
@@ -15,4 +15,4 @@ if(window && !customElements.get('eox-jsonform')) import("@eox/jsonform");
         overflow:hidden
     }*/
 </style>
-<eo-dash style="height:calc(100dvh - 64px)" .config="withBase('/configs/trilateral-config.js')"/>
+<eo-dash class="full-width" style="height:calc(100dvh); display: block;" .config="withBase('/configs/trilateral-config.js')"/>
