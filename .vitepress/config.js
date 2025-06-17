@@ -1,10 +1,12 @@
 import { defineConfig } from "vitepress";
+import baseConfig from "@eox/pages-theme-eox/config";
+import { name as packageName } from "../package.json";
 
+const brandId = packageName.replace("-client", "");
+console.log(baseConfig(brandId));
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Earth Observing Dashboard",
-  description: "Global environmental changes observed by NASA, ESA, and JAXA",
-  appearance: false, // disable dark mode
+  extends: baseConfig(brandId),
   vue: {
     template: {
       compilerOptions: {
@@ -19,7 +21,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    logo: "/assets/trilateral_logo.svg",
+    
     nav: [
       { text: "Home", link: "/" },
       { text: "News & Updates", link: "/news_updates" },

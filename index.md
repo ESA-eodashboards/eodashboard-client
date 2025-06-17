@@ -5,7 +5,11 @@ layout: home
 hero:
   name: "EARTH OBSERVING DASHBOARD"
   tagline: "Global environmental changes observed by NASA, ESA, and JAXA"
-  text: ""
+  text: "EARTH OBSERVING DASHBOARD"
+  image:
+    src: assets/trilateral_logo.svg
+  background: 
+    src: assets/EO_Dashboard_kv_no_logos.jpg
 ---
 <script client-only>
   if(window && !customElements.get('eox-itemfilter')) import("@eox/itemfilter");

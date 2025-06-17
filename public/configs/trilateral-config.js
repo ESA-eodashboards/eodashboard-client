@@ -15,7 +15,7 @@ export default {
   options: {
     useSubCode: true
   },
-  stacEndpoint: "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
+  stacEndpoint: "http://localhost:9090/catalog.json",
   brand: {
     noLayout: true,
     name: "Earth Observing Dashboard",
