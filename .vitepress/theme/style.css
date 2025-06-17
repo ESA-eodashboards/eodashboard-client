@@ -50,7 +50,7 @@ eo-dash .eodash-overlay p {
 */
 
 .top-nav,
-.Layout .top-nav nav .button {
+.top-nav nav .button {
   background: var(--primary);
   color: var(--on-primary) !important;
 }
