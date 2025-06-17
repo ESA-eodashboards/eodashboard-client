@@ -1,6 +1,6 @@
 
 let stacEndpoint =
-  "https://esa-eodash.github.io/RACE-catalog/RACE/catalog.json";
+  "https://esa-eodashboards.github.io/eodashboard-catalog/catalog.json";
 const searchParams = new URLSearchParams(window.location.search);
 if (searchParams.has("catalog")) {
   stacEndpoint = stacEndpoint.replace(
@@ -15,7 +15,7 @@ export default {
   options: {
     useSubCode: true
   },
-  stacEndpoint: "http://localhost:9090/catalog.json",
+  stacEndpoint: "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
   brand: {
     noLayout: true,
     name: "Earth Observing Dashboard",
