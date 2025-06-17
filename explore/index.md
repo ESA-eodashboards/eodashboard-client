@@ -10,9 +10,11 @@ layout: false
 if(window && !customElements.get('eox-jsonform')) import("@eox/jsonform");
     
 </script>
-<style>
-    /*:root{
-        overflow:hidden
-    }*/
+<style scoped>
+::v-deep .top-nav > nav, .top-nav > .holder {
+  max-width: unset;
+}
 </style>
-<eo-dash class="full-width" style="height:calc(100dvh); display: block;" .config="withBase('/configs/trilateral-config.js')"/>
+
+<NavBar></NavBar>
+<eo-dash style="height: calc(100dvh - var(--vp-nav-height))" .config="withBase('/configs/trilateral-config.js')"/>
