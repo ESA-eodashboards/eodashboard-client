@@ -65,6 +65,14 @@ Whether you're an educator, researcher, or simply curious, the Dashboard also se
 
 ## Publications
 
+2025
+
+- A Anghelea,  M. Maskey,  N. Sugita,  S. Sobue,  D. Santillan, "[Earth Observation Science Storytelling with Dashboards](https://lps25.esa.int/programme/programme-session/?id=30A6B8BB-94ED-4B9E-A770-C16C46B6DA28)", Living Planet Symposium 2025
+
+2024
+
+- A. Anghelea, M. Maskey, S. Sobue, N. Sugita, B. Leffer and C. Vitolo, "[ESA-NASA-JAXA EO Dashboard Collaboration Advancing EO Science for Society](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1540529)", AGU 2024
+
 2023
 
   - A. Anghelea, M. Maskey, S. -I. Sobue and N. Sugita, "The NASA-ESA-JAXA Earth Observation Dashboard," IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023, pp. 418-420, doi: [10.1109/IGARSS52108.2023.10282443](https://doi.org/10.1109/IGARSS52108.2023.10282443).
