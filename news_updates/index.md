@@ -2,29 +2,42 @@
 
 ## Upcoming Events
 
-The EO Dashboard is organising and supporting hands-on workshops and global open competitions, including the NASA Space Apps, the EO Dashboard Hackathon and IGARSS Tutorials, workshops at FOSS4G, and many others.
+The EO Dashboard is organising and supporting hands-on workshops, hands-on tutorials, and global open competitions. Come meet the ESA-NASA-JAXA team at these various events. 
 
-* Upcoming tutorial in the [Living Planet Symposium 2025](https://lps25.esa.int/) in Vienna on June 22nd!
-  D.03.18 TUTORIAL - From Earth Science to Storytelling with EO Dashboard
+* **22 – 27 Jun 2025- Living Planet Symposium, Vienna, AT**
+  *   Tutorial [D.03.18 From Earth Science to Storytelling](https://lps25.esa.int/programme/programme-session/?id=7A4E4BC9-92EE-41D3-8A3A-62FF63DC914E) -  *build your first dashboard story step-by-step*
+  *   Demonstration in the EO Arena [D.03.32 DEMO - NASA-ESA-JAXA EO Dashboard](https://lps25.esa.int/programme/programme-session/?id=7A613D5A-F956-41EF-B520-EE0A71549B47) - live demo
+* **29 Sept – 3 Oct 2025- Big Data from Space, Riga, LV**
+  *   Tutorial [Hands-on with EO: Creating indicators and stories from open satellite data](https://www.bigdatafromspace2025.org/satellite-event-submission)** -  *develop new indicators from EO mission data and use them to craft a compelling narrative*
+* **4 – 5 Oct 2025 - NASA Space Apps Challenge, Global, hybrid**
+  *   [Global Hackathon](https://www.spaceappschallenge.org) - *form a team, solve a real-world EO challenge, and build your project with EO Dashboard!*
 
-## News
+## Latest News
 
-* 2025-03-10: Survey for AI-based features on EO Dashboard
-The eodashboard.org project is looking into potential applications of AI and we would love to hear your thoughts and ideas! We have setup a questionnaire here if you find some time to let us pick your brain. Thank you!
-* 2025-02-05: NASA, ESA, and JAXA sign joint declaration to continue their collaboration on EO Dashboard through September 2026
-As the project evolves, the agencies are working closely with academic and industry partners to enhance its capabilities. Future plans involve integrating cutting-edge technologies, incorporating data from new science missions like EarthCARE and PACE, supporting new joint scientific research, and launching new outreach efforts (link to declaration).
-* 2024-07-05: EO Dashboard at IGARSS 2024
-The joint ESA, NASA and JAXA team will present the tutorial HD-12: Exploring Environmental Changes with EO: a hands-on journey from data analysis to scientific communication with ESA-NASA-JAXA EO Dashboard. https://www.2024.ieeeigarss.org/tutorials.php#tut10
+- **10 Mar 2025 — Survey: AI-Powered Features**  
+  We’re exploring expanding the use of machine-learning on EO Dashboard. *Tell us what you’d like to see!* 
+  [>> Fill out the 3-minute questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=0Kxcmu8r102sXH6-H1T0laW1G4eQe39LnE1OD1qEn2xUODdPSEJUV0pKU1E1NFZXNDFIQUs4T1o1Sy4u)
+
+- **05 Feb 2025 — Agencies Extend Partnership**  
+  ESA, NASA & JAXA sign a joint declaration committing to EO Dashboard through **September 2026**. Future plans involve integrating cutting-edge technologies, incorporating data from new science missions like EarthCARE and PACE, supporting new joint  scientific research, and launching new outreach efforts.
+  [>> Read the declaration](https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/stories/news/2024Joint%20Declaration_draftA-MM-AA_NS_JAXA.pdf)
+
+## Blog Posts
+
+- **[Exploring Open Science & Geospatial Innovation](https://eo4society.esa.int/2023/07/03/exploring-open-science-and-geospatial-innovation-the-nasa-esa-jaxa-eo-dashboard-workshop-at-foss4g-2023/)** – recap of our FOSS4G workshop.  
+- **[Creating Powerful Visuals of COVID-19 Impacts on Human Activities](https://medium.com/euro-data-cube/creating-powerful-visuals-of-covid-19-impacts-on-human-activities-8879fa75121d)** – Medium article.  
+- **[World Food Supply Amid a Pandemic (Part 1)](https://medium.com/euro-data-cube/world-food-supply-amid-a-pandemic-3940ef855f07)** – Medium series.
+- **[World food supply amid a pandemic-Part 2](https://medium.com/euro-data-cube/world-food-supply-amid-a-pandemic-87215c8edbdc)** – Medium series.
+- **[Lockdown Is Also Changing Our Planet at Night](https://medium.com/euro-data-cube/lockdown-is-also-changing-our-planet-at-night-520deffec252)** – Medium article.
+- **[The Pandemic Disruption of Air Traffic — As Seen from Space](https://medium.com/euro-data-cube/the-pandemic-disruption-of-air-traffic-as-seen-from-space-6dad64201b9a)** – Medium article.  
+- **[Coronavirus and Water Quality — what’s the correlation?](https://medium.com/euro-data-cube/coronavirus-and-water-quality-whats-the-correlation-bf727d343e61)** - Medium article. 
+- **[Building traffic maps with Space data](https://medium.com/euro-data-cube/building-traffic-maps-with-space-data-%EF%B8%8F-fd894a847792)** - Medium article.  
+
+---
+
+### Share Your Story
+
+Working on something society-relevant with EO data from **ESA, NASA, or JAXA**? Send us your idea at **eodash@esa.int** - the most compelling submissions will be featured on this page and across our channels.
 
 
-## Blog posts
-
-* [Exploring Open Science and Geospatial Innovation: the NASA-ESA-JAXA EO dashboard workshop at FOSS4G 2023](https://eo4society.esa.int/2023/07/03/exploring-open-science-and-geospatial-innovation-the-nasa-esa-jaxa-eo-dashboard-workshop-at-foss4g-2023/)
-* [Creating powerful visuals of COVID-19 impacts on human activities](https://medium.com/euro-data-cube/creating-powerful-visuals-of-covid-19-impacts-on-human-activities-8879fa75121d)
-* [World food supply amid a pandemic-Part 1](https://medium.com/euro-data-cube/world-food-supply-amid-a-pandemic-3940ef855f07)
-* [World food supply amid a pandemic-Part 2](https://medium.com/euro-data-cube/world-food-supply-amid-a-pandemic-87215c8edbdc)
-* [Lockdown is also changing our Planet at night](https://medium.com/euro-data-cube/lockdown-is-also-changing-our-planet-at-night-520deffec252)
-* [The pandemic disruption of air traffic — as seen from Space](https://medium.com/euro-data-cube/the-pandemic-disruption-of-air-traffic-as-seen-from-space-6dad64201b9a)
-* [Coronavirus and Water Quality — what’s the correlation?](https://medium.com/euro-data-cube/coronavirus-and-water-quality-whats-the-correlation-bf727d343e61)
-* [Building traffic maps with Space data](https://medium.com/euro-data-cube/building-traffic-maps-with-space-data-%EF%B8%8F-fd894a847792)
 
