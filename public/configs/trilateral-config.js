@@ -1,6 +1,6 @@
 
 let stacEndpoint =
-  "https://esa-eodash.github.io/RACE-catalog/RACE/catalog.json";
+  "https://esa-eodashboards.github.io/eodashboard-catalog/catalog.json";
 const searchParams = new URLSearchParams(window.location.search);
 if (searchParams.has("catalog")) {
   stacEndpoint = stacEndpoint.replace(
@@ -26,8 +26,8 @@ export default {
         surface: "#ffff",
       },
       variables: {
-        "surface-opacity": 0.6,
-        "primary-opacity": 0.8,
+        "surface-opacity": 0.8,
+        "primary-opacity": 0.9,
       },
       // Bank-Wong palette
       collectionsPalette: [
@@ -119,12 +119,18 @@ export default {
           },
         },
         {
-          id: Symbol(),
-          type: "internal",
-          title: "Layers",
-          layout: { x: 0, y: 1, w: 3, h: 6 },
-          widget: {
-            name: "EodashLayerControl",
+          defineWidget: (selectedSTAC) => {
+            return selectedSTAC
+              ? {
+                  id: Symbol(),
+                  type: "internal",
+                  title: "Layers",
+                  layout: { x: 0, y: 1, w: 3, h: 6 },
+                  widget: {
+                    name: "EodashLayerControl",
+                  },
+                }
+              : null;
           },
         },
         {
@@ -402,12 +408,18 @@ export default {
           },
         },
         {
-          id: Symbol(),
-          type: "internal",
-          title: "Layers",
-          layout: { x: 0, y: 1, w: 3, h: 6 },
-          widget: {
-            name: "EodashLayerControl",
+          defineWidget: (selectedSTAC) => {
+            return selectedSTAC
+              ? {
+                  id: Symbol(),
+                  type: "internal",
+                  title: "Layers",
+                  layout: { x: 0, y: 1, w: 3, h: 6 },
+                  widget: {
+                    name: "EodashLayerControl",
+                  },
+                }
+              : null;
           },
         },
         {

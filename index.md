@@ -4,8 +4,10 @@ layout: home
 
 hero:
   name: "EARTH OBSERVING DASHBOARD"
-  tagline: "Global environmental changes observed by NASA, ESA, and JAXA"
-  text: ""
+  tagline: "<img src='assets/trilateral_logo.svg' class='center bottom-margin large-margin' style='height: 40px' /><p>Global environmental changes observed by NASA, ESA, and JAXA</p>"
+  text: "EARTH OBSERVING DASHBOARD"
+  background: 
+    src: assets/EO_Dashboard_kv_no_logos.jpg
 ---
 <script client-only>
   if(window && !customElements.get('eox-itemfilter')) import("@eox/itemfilter");
@@ -76,3 +78,10 @@ The European Space Agency (ESA), Japan Aerospace Exploration Agency (JAXA), and 
 The dashboard provides an easy-to-use resource for all kinds of public from the scientist to the decision-maker, including people not familiar with satellites. Based on accurate remote sensing observations, it showcases examples of global environmental changes on 7 themes: Atmosphere, Oceans, Biomass, Cryosphere, Agriculture, Covid-19 and Economy. The dashboard offers a precise, objective and factual view without any artifacts of our planet. You can explore countries and regions around the world to see how the indicators in specific locations changed over time.
 
 ESA, JAXA, and NASA will continue to enhance this dashboard as new data becomes available.
+
+<style>
+  /* Making sure hero image is not darkened */
+  header .background-image {
+    opacity: 1!important;
+  }
+</style>
