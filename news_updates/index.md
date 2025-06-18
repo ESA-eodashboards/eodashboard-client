@@ -6,6 +6,7 @@ The EO Dashboard is organising and supporting hands-on workshops, hands-on tutor
 
 * **22 – 27 Jun 2025- Living Planet Symposium, Vienna, AT**
   *   Tutorial [D.03.18 From Earth Science to Storytelling](https://lps25.esa.int/programme/programme-session/?id=7A4E4BC9-92EE-41D3-8A3A-62FF63DC914E) -  *build your first dashboard story step-by-step*
+  *   Demonstration in the EO Arena [D.03.32 DEMO - NASA-ESA-JAXA EO Dashboard](https://lps25.esa.int/programme/programme-session/?id=7A613D5A-F956-41EF-B520-EE0A71549B47) - live demo
 * **29 Sept – 3 Oct 2025- Big Data from Space, Riga, LV**
   *   Tutorial [Hands-on with EO: Creating indicators and stories from open satellite data](https://www.bigdatafromspace2025.org/satellite-event-submission)** -  *develop new indicators from EO mission data and use them to craft a compelling narrative*
 * **4 – 5 Oct 2025 - NASA Space Apps Challenge, Global, hybrid**
