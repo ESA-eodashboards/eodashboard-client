@@ -62,6 +62,8 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
   };
 </script>
 
+<div class="large-space"></div>
+
 <client-only>
   <eox-itemfilter
     :items="items"
