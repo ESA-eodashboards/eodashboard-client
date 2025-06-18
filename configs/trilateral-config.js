@@ -1,15 +1,3 @@
-
-let stacEndpoint =
-  "https://esa-eodashboards.github.io/eodashboard-catalog/catalog.json";
-const searchParams = new URLSearchParams(window.location.search);
-if (searchParams.has("catalog")) {
-  stacEndpoint = stacEndpoint.replace(
-    "catalog/",
-    `catalog/pr-preview/${searchParams.get("catalog")}/`,
-  );
-}
-
-
 export default {
   id: "demo",
   options: {
