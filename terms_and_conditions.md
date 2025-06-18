@@ -6,7 +6,7 @@ COVID-19 Earth Observing Dashboard
 https://eodashboard.org
 
 ## (1) Publisher of the Website
-This Website is a publication of the European Space Agency (“ESA” or “Agency”), an international intergovernmental organisation governed by its Convention (available on [www.esa.int](www.esa.int)) located at 24 rue du Général Bertrand CS 30798, 75345 PARIS CEDEX, France.
+This Website is a publication of the European Space Agency (“ESA” or “Agency”), an international intergovernmental organisation governed by its Convention (available on [www.esa.int](https://www.esa.int)) located at 24 rue du Général Bertrand CS 30798, 75345 PARIS CEDEX, France.
 
 ## (2) Purpose of the Website
 This Website is intended to inform the public and demonstrate the use of NASA 's Earth Observation satellites, Japanese Earth observation satellites, the Sentinel missions from the European Copernicus programme led by the European Commission, as well as nightlight maps using data acquired by the US Suomi NPP satellite to monitor and analyse environmental parameters changes, agriculture productivity and economic activity during the coronavirus lockdown and post-lockdown recovery period.
