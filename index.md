@@ -32,14 +32,14 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
       "subtitle",
       "theme"
     ],
-    "title": "Search",
+    "title": "By keyword",
     "type": "text",
     "placeholder": "Search in title or subtitle",
     "expanded": true
   }, {
     "key": 'theme',
-    "title": 'Theme',
-    "expanded": true
+    "title": 'By theme',
+    expanded: true
   }
   ];
 
@@ -73,8 +73,14 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
     resultType="cards"
     @select="handleResultClick"
     style="--form-flex-direction: row"
-  ></eox-itemfilter>
+    class="large-margin bottom-margin"
+  >
+    <h6 slot="filterstitle" class="small vertical-margin">Filter Stories:</h6>
+    <h6 slot="resultstitle" class="large large-margin vertical-margin top-padding">Earth Observing Dashboard Stories</h6>
+  </eox-itemfilter>
 </client-only>
+
+<div class="large-space"></div>
 
 <style>
   /* Making sure hero image is not darkened */
