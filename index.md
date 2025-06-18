@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "EARTH OBSERVING DASHBOARD"
-  tagline: "<img src='assets/trilateral_logo.svg' class='center bottom-margin large-margin' style='height: 40px' /><p>Global environmental changes observed by NASA, ESA, and JAXA</p>"
+  tagline: "<img src='./assets/trilateral_logo.svg' class='center bottom-margin large-margin' style='height: 40px' />Global environmental changes observed by NASA, ESA, and JAXA"
   text: "EARTH OBSERVING DASHBOARD"
   background: 
     src: assets/EO_Dashboard_kv_no_logos.jpg
