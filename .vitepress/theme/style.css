@@ -49,6 +49,10 @@ eo-dash .eodash-overlay p {
 }
 */
 
+html {
+  overflow: auto;
+}
+
 .top-nav,
 .top-nav nav .button {
   background: var(--primary);
@@ -56,6 +60,10 @@ eo-dash .eodash-overlay p {
 }
 .top-nav {
   box-shadow: 0 1px 5px #15142e0d, 0 4px 16px #15142e1a;
+  height: 60px;
+}
+:root {
+  --vp-nav-height: 60px !important;
 }
 .nav-desktop:after {
   content: "";
