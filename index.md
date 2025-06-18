@@ -7,7 +7,7 @@ hero:
   tagline: "<img src='./assets/trilateral_logo.svg' class='center bottom-margin large-margin' style='height: 40px' />Global environmental changes observed by NASA, ESA, and JAXA"
   text: "EARTH OBSERVING DASHBOARD"
   background: 
-    src: assets/EO_Dashboard_kv_no_logos.jpg
+    src: ./assets/EO_Dashboard_kv_no_logos.jpg
 ---
 <script client-only>
   if(window && !customElements.get('eox-itemfilter')) import("@eox/itemfilter");
