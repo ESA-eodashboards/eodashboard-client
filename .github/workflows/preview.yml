@@ -5,13 +5,14 @@
 name: Deploy PR previews
 
 on:
-  pull_request:
+  pull_request_target:
+    branches:
+      - main
     types:
       - opened
       - reopened
       - synchronize
-      - closed # pr-preview-action will do cleanup here, but build steps can be skipped
-
+      - closed
 # do not allow running multiple of pipelines for this PR in parallel
 concurrency: preview-${{ github.ref }}
 
@@ -29,7 +30,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - uses: actions/checkout@v4
+      - 
+        uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
       - if: github.event.action != 'closed'
         run: |
           npm install

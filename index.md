@@ -4,8 +4,10 @@ layout: home
 
 hero:
   name: "EARTH OBSERVING DASHBOARD"
-  tagline: "Global environmental changes observed by NASA, ESA, and JAXA"
-  text: ""
+  tagline: "<img src='assets/trilateral_logo.svg' class='center bottom-margin large-margin' style='height: 40px' /><p>Global environmental changes observed by NASA, ESA, and JAXA</p>"
+  text: "EARTH OBSERVING DASHBOARD"
+  background: 
+    src: assets/EO_Dashboard_kv_no_logos.jpg
 ---
 <script client-only>
   if(window && !customElements.get('eox-itemfilter')) import("@eox/itemfilter");
@@ -74,4 +76,9 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
   ></eox-itemfilter>
 </client-only>
 
-
+<style>
+  /* Making sure hero image is not darkened */
+  header .background-image {
+    opacity: 1!important;
+  }
+</style>
