@@ -48,6 +48,8 @@
 
 ## Notebooks
 
+Whether you're an educator, researcher, or simply curious, the Dashboard also serves as a valuable educational resource. Many indicators are accompanied by support materials - including example notebooks - that show how the data was produced and how it can be accessed and analyzed further. 
+
 <client-only>
   <eox-itemfilter
     :items="items"
@@ -63,25 +65,33 @@
 
 ## Publications
 
+2025
+
+- A Anghelea,  M. Maskey,  N. Sugita,  S. Sobue,  D. Santillan, "[Earth Observation Science Storytelling with Dashboards](https://lps25.esa.int/programme/programme-session/?id=30A6B8BB-94ED-4B9E-A770-C16C46B6DA28)", Living Planet Symposium 2025
+
+2024
+
+- A. Anghelea, M. Maskey, S. Sobue, N. Sugita, B. Leffer and C. Vitolo, "[ESA-NASA-JAXA EO Dashboard Collaboration Advancing EO Science for Society](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1540529)", AGU 2024
+
 2023
 
-  - A. Anghelea, M. Maskey, S. -I. Sobue and N. Sugita, "The NASA-ESA-JAXA Earth Observation Dashboard," IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023, pp. 418-420, doi: 10.1109/IGARSS52108.2023.10282443.
-  - Daniel Santillan, Silvester Pari, Stephan Meissl, Alessandro Scremin, Diego Moglioni, Sara Aparicio, Anca Anghelea, OPEN-SOURCE SCIENCE FOR EARTH OBSERVATION DASHBOARDS, IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023
-  - Manil Maskey, Barry Lefer, AIR QUALITY INSIGHTS WITH NASA INTERACTIVE DASHBOARD, IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023
-  - Slesa Adhikari, Alexandra Kirk, Aimee Barciauskas, Daniel da Silva, Hanbyul Jo, Ricardo Mestre, Anthony Boyd, Michael Suttles, Brian Freitag, Manil Maskey, Jerika Christman, A CONFIGURABLE AND INTERACTIVE DASHBOARD FOR EARTH OBSERVATION, IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023
-  - Naoko Sugita, Kohei Kawamura, Yusuke Ikehata, Shinichi Sobue, Ko Hamamoto, JAXA’S EFFORTS FOR BETTER ACCESS TO EO DATA AND INFORMATION: EARTH-GRAPHY AND JAXA DASHBOARD PLAN, IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023
-  - S. Sobue, Y. Tochigi, K. Kawamura, Y.Ikehata, G. Segami, N. Sugita, K. Hamamoto, K. Kuroiwa, JAXA EARTH OBSERVATION DASHBOARD WITH COG AND WMS/WMTS, The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XLVIII-4/W7-2023 FOSS4G (Free and Open Source Software for Geospatial) 2023 – Academic Track, 26 June–2 July 2023, Prizren, Kosovo
+  - A. Anghelea, M. Maskey, S. -I. Sobue and N. Sugita, "The NASA-ESA-JAXA Earth Observation Dashboard," IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023, pp. 418-420, doi: [10.1109/IGARSS52108.2023.10282443](https://doi.org/10.1109/IGARSS52108.2023.10282443).
+  - D. Santillan, S. Pari, S. Meissl, A. Scremin, D. Moglioni, S. Aparicio, A. Anghelea, "[Open-Source Science for Earth Observation Dashboards](https://2023.ieeeigarss.org/view_paper.php?PaperNum=3498)", IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023
+  - M. Maskey, B. Lefer, "[Air Quality Insights with NASA Interactive Dashboard](https://2023.ieeeigarss.org/view_paper.php?PaperNum=3485)", IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023
+  - S. Adhikari, A. Kirk, A. Barciauskas, D. da Silva, H. Jo, R. Mestre, A. Boyd, M. Suttles, B. Freitag, M. Maskey, J. Christman, "[A Configurable and Interactive Dashboard for Earth Observation](https://2023.ieeeigarss.org/view_paper.php?PaperNum=5280)", IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023
+  - N. Sugita, K. Kawamura, Y. Ikehata, S. Sobue, K. Hamamoto, "[JAXA’s Efforts for Better Access to EO Data and Information: Earth-Graphy and JAXA Dashboard Plan](https://2023.ieeeigarss.org/view_paper.php?PaperNum=3485#top)", IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium, Pasadena, CA, USA, 2023
+  - Sobue, S., Tochigi, Y., Kawamura, K., Ikehata, Y., Segami, G., Sugita, N., Hamamoto, K., and Kuroiwa, K.: JAXA EARTH OBSERVATION DASHBOARD WITH COG AND WMS/WMTSS, Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., XLVIII-4/W7-2023, 209–216, [https://doi.org/10.5194/isprs-archives-XLVIII-4-W7-2023-209-2023](https://doi.org/10.5194/isprs-archives-XLVIII-4-W7-2023-209-2023), 2023.
 
 2021
 
-  - B. Lefer et al., "A Multi-Agency COVID-19 Dashboard with Satellite Air Quality Data," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1553-1555, doi: 10.1109/IGARSS47720.2021.9553200.
-  - Y. -L. Desnos, E. Hamdouch, A. Anghelea, G. Landgraf, S. Cheli and J. Turpin, "Rapid Action on COVID-19 and Earth Observation: an Inittiative for Societal Information Enabled by Copernicus Sentinels Data," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1374-1376, doi: 10.1109/IGARSS47720.2021.9553746.
-  - A. Anghelea, Y. -L. Desnos, M. Maskey, S. -i. Sobue and S. Meissl, "The COVID-19 Earth Observation Dashboard: A NASA-ESA-JAXA Collaborative Product," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1556-1559, doi: 10.1109/IGARSS47720.2021.9553205.
-  - M. J. Falkowski, M. Maskey, S. -i. Sobue, G. Campbell, G. Bawden and T. Tadono, "COIVD-19 Impact Monitoring of Economic Activities," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1366-1369, doi: 10.1109/IGARSS47720.2021.9555044.
-  - B. Koetz et al., "COIVD-19 Impact Monitoring for Agriculutre," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1567-1570, doi: 10.1109/IGARSS47720.2021.9553844.
-  - K. Hamamoto et al., "Jaxa's Earth Observation Data Analysis on Covid-19," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1362-1365, doi: 10.1109/IGARSS47720.2021.9554593.
-  - M. -H. Rio et al., "Trilateral Water Quality Monitoring from Space during Covid-19," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1563-1566, doi: 10.1109/IGARSS47720.2021.9554949.
-  - A. Kuze et al., "Covid-19 Impact Monitoring for Climate Environment (Greenhouse Gases)," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1560-1562, doi: 10.1109/IGARSS47720.2021.9554328.
+  - B. Lefer et al., "A Multi-Agency COVID-19 Dashboard with Satellite Air Quality Data," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, Brussels, Belgium, 2021, pp. 1553-1555, doi: [10.1109/IGARSS47720.2021.9553200](https://ieeexplore.ieee.org/document/9553200).
+  - Y. -L. Desnos, E. Hamdouch, A. Anghelea, G. Landgraf, S. Cheli and J. Turpin, "Rapid Action on COVID-19 and Earth Observation: an Inittiative for Societal Information Enabled by Copernicus Sentinels Data," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, Brussels, Belgium, 2021, pp. 1374-1376, doi: [10.1109/IGARSS47720.2021.9553746](https://ieeexplore.ieee.org/document/9553746).
+  - A. Anghelea, Y. -L. Desnos, M. Maskey, S. -i. Sobue and S. Meissl, "The COVID-19 Earth Observation Dashboard: A NASA-ESA-JAXA Collaborative Product," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, Brussels, Belgium, 2021, pp. 1556-1559, doi: [10.1109/IGARSS47720.2021.9553205](https://ieeexplore.ieee.org/document/9553205).
+  - M. J. Falkowski, M. Maskey, S. -i. Sobue, G. Campbell, G. Bawden and T. Tadono, "COIVD-19 Impact Monitoring of Economic Activities," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, Brussels, Belgium, 2021, pp. 1366-1369, doi: [10.1109/IGARSS47720.2021.9555044](https://ieeexplore.ieee.org/document/9555044).
+  - B. Koetz et al., "COIVD-19 Impact Monitoring for Agriculture," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, Brussels, Belgium, 2021, pp. 1567-1570, doi: [10.1109/IGARSS47720.2021.9553844](https://ieeexplore.ieee.org/document/9553844).
+  - K. Hamamoto et al., "Jaxa's Earth Observation Data Analysis on Covid-19," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, Brussels, Belgium, 2021, pp. 1362-1365, doi: [10.1109/IGARSS47720.2021.9554593](https://ieeexplore.ieee.org/document/9554593).
+  - M. -H. Rio et al., "Trilateral Water Quality Monitoring from Space during Covid-19," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1563-1566, doi: [10.1109/IGARSS47720.2021.9554949](https://ieeexplore.ieee.org/document/9554949).
+  - A. Kuze et al., "Covid-19 Impact Monitoring for Climate Environment (Greenhouse Gases)," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 1560-1562, doi: [10.1109/IGARSS47720.2021.9554328](https://ntrs.nasa.gov/api/citations/20240000406/downloads/IGARSS2021GHG-Dashboard-%20revision511-1.pdf).
 
 ## Tutorials
 
@@ -95,8 +105,8 @@
 * [EO Dashboard Hackathon 2021](https://www.eodashboardhackathon.org/)
 * [FOSS4G Europe 2024](https://talks.osgeo.org/foss4g-europe-2024-workshops/talk/8S3KEA/)
 * [FOSS4G 2023](https://talks.osgeo.org/foss4g-2023-workshop/talk/8P89WS/)
-* [2nd Earth System Science Challenge - February 2024](https://sciencehub.esa.int/2024/02/08/the-2nd-earth-system-science-workshop-at-esrin-science-hub/)
-* [3rd Earth System Science Challenge - May 2024](https://sciencehub.esa.int/2024/05/09/3rd-earth-system-science-challenge/)
+* [2nd ESA Earth System Science Challenge - February 2024](https://sciencehub.esa.int/2024/02/08/the-2nd-earth-system-science-workshop-at-esrin-science-hub/)
+* [3rd ESA Earth System Science Challenge - May 2024](https://sciencehub.esa.int/2024/05/09/3rd-earth-system-science-challenge/)
 
 ## Documentation
 
