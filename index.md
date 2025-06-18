@@ -11,7 +11,7 @@ hero:
   if(window && !customElements.get('eox-itemfilter')) import("@eox/itemfilter");
 </script>
 
-Please explore the Stories below to get acquainted with the various datasets from the agencies and insights that can be won from them.
+Please explore test the Stories below to get acquainted with the various datasets from the agencies and insights that can be won from them.
 If you are interested in further science, events, or other information we invite you to explore the site and available sections!
 
 <script setup>
