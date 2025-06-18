@@ -11,8 +11,11 @@ hero:
   if(window && !customElements.get('eox-itemfilter')) import("@eox/itemfilter");
 </script>
 
-Please explore the Stories below to get acquainted with the various datasets from the agencies and insights that can be won from them.
-If you are interested in further science, events, or other information we invite you to explore the site and available sections!
+The Earth Observing Dashboard is a joint initiative by the European Space Agency (ESA), the National Aeronautics and Space Administration (NASA), and the Japan Aerospace Exploration Agency (JAXA). This tri-agency effort brings together Earth Observation data from complementary satellite missions to share scientifically grounded insights with the public. Using storytelling, it combines interactive visual elements—such as maps, indicators, and dynamic charts, to explore the impacts of global events on our planet. 
+
+**Have a story to tell? We'd love to see it.**
+
+With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of storytellers, educators, and explorers. Use the Dashboard to explore the available stories, or create your own data-driven narratives and share them with the world. Submit your ideas or completed stories to eodash@esa.int for a chance to be featured on the Dashboard. visit the **Resources** page for details. 
 
 <script setup>
   import { ref, onMounted } from 'vue';
@@ -71,8 +74,4 @@ If you are interested in further science, events, or other information we invite
   ></eox-itemfilter>
 </client-only>
 
-The European Space Agency (ESA), Japan Aerospace Exploration Agency (JAXA), and National Aeronautics and Space Administration (NASA) have combined their resources, technical knowledge, and expertise to produce this Earth Observing Dashboard, which strengthens our understanding of global environmental changes and other societal challenges impacting our planet.
 
-The dashboard provides an easy-to-use resource for all kinds of public from the scientist to the decision-maker, including people not familiar with satellites. Based on accurate remote sensing observations, it showcases examples of global environmental changes on 7 themes: Atmosphere, Oceans, Biomass, Cryosphere, Agriculture, Covid-19 and Economy. The dashboard offers a precise, objective and factual view without any artifacts of our planet. You can explore countries and regions around the world to see how the indicators in specific locations changed over time.
-
-ESA, JAXA, and NASA will continue to enhance this dashboard as new data becomes available.
