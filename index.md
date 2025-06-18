@@ -84,4 +84,9 @@ ESA, JAXA, and NASA will continue to enhance this dashboard as new data becomes 
   header .background-image {
     opacity: 1!important;
   }
+
+  /* Fixing nav bar height here for now */
+  .top-nav {
+    height: 60px!important;
+  }
 </style>
