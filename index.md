@@ -78,3 +78,10 @@ The European Space Agency (ESA), Japan Aerospace Exploration Agency (JAXA), and 
 The dashboard provides an easy-to-use resource for all kinds of public from the scientist to the decision-maker, including people not familiar with satellites. Based on accurate remote sensing observations, it showcases examples of global environmental changes on 7 themes: Atmosphere, Oceans, Biomass, Cryosphere, Agriculture, Covid-19 and Economy. The dashboard offers a precise, objective and factual view without any artifacts of our planet. You can explore countries and regions around the world to see how the indicators in specific locations changed over time.
 
 ESA, JAXA, and NASA will continue to enhance this dashboard as new data becomes available.
+
+<style>
+  /* Making sure hero image is not darkened */
+  header .background-image {
+    opacity: 1!important;
+  }
+</style>

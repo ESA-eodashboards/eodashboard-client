@@ -20,8 +20,8 @@ layout: page
 <iframe
     v-if="iframeSrc"
     :src="iframeSrc"
-    width="100%"
+    class="full-width"
     height="100%"
-    style="border: none; overflow-y: auto; height: calc(100vh - 64px)"
+    style="border: none; overflow-y: auto; height: calc(100vh - 64px);transform: translateY(var(--vp-nav-height)); margin-top: calc(var(--vp-nav-height) * -1 - 90px - 48px); margin-bottom: var(--vp-nav-height);"
 ></iframe>
 <p v-else>Notebook `{{ paramName }}` not found</p>
