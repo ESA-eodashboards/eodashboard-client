@@ -74,7 +74,7 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
     :filterProperties="filterProps"
     resultType="cards"
     @select="handleResultClick"
-    style="--form-flex-direction: row"
+    style="--form-flex-direction: row; --select-filter-max-items: 10"
     class="large-margin bottom-margin"
   >
     <h6 slot="filterstitle" class="small vertical-margin">Filter Stories:</h6>
