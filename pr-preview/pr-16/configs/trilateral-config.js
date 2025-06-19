@@ -101,6 +101,7 @@ export default {
                 aggregateResults: "collection_group",
                 style: {
                   "--form-flex-direction": "row",
+                  "--select-filter-max-items": 8
                 },
               },
             },
