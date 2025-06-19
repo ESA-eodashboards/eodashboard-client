@@ -51,12 +51,16 @@ layout: false
         if (!customElements.get("eodash-container")) {
             customElements.define("eodash-container", EodashContainer);
         }
+        // monkeypatching querySelector to get to the EOXMap inside shadowDom for drawtools to attach itself
+        document.querySelector = (function(originalQuerySelector) {
+        return function(selector) {
+            if (selector === 'eox-map#main') {
+                return document.querySelector("eodash-container").shadowRoot.querySelector("eox-map#main");
+            }
+            return originalQuerySelector.call(document, selector);
+        };
+        })(document.querySelector);
     });
-</script>
-<script client-only>
-    
-if(window && !customElements.get('eox-jsonform')) import("@eox/jsonform");
-    
 </script>
 
 <NavBar></NavBar>
