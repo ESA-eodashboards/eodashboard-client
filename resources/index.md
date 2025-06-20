@@ -1,8 +1,3 @@
----
-layout: page
-footer: null
----
-
 <script client-only>
   if(window && !customElements.get('eox-itemfilter')) import("@eox/itemfilter");
 </script>
