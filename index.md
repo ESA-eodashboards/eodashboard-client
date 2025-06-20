@@ -4,10 +4,10 @@ layout: home
 
 hero:
   name: "EARTH OBSERVING DASHBOARD"
-  tagline: "<img src='assets/trilateral_logo.svg' class='center bottom-margin large-margin' style='height: 40px' /><p>Global environmental changes observed by NASA, ESA, and JAXA</p>"
+  tagline: "<img src='./assets/trilateral_logo.svg' class='center bottom-margin large-margin' style='height: 40px' />Global environmental changes observed by NASA, ESA, and JAXA"
   text: "EARTH OBSERVING DASHBOARD"
   background: 
-    src: assets/EO_Dashboard_kv_no_logos.jpg
+    src: ./assets/EO_Dashboard_kv_no_logos.jpg
 ---
 <script client-only>
   if(window && !customElements.get('eox-itemfilter')) import("@eox/itemfilter");
@@ -32,14 +32,14 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
       "subtitle",
       "theme"
     ],
-    "title": "Search",
+    "title": "By keyword",
     "type": "text",
     "placeholder": "Search in title or subtitle",
     "expanded": true
   }, {
     "key": 'theme',
-    "title": 'Theme',
-    "expanded": true
+    "title": 'By theme',
+    expanded: true
   }
   ];
 
@@ -62,6 +62,8 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
   };
 </script>
 
+<div class="large-space"></div>
+
 <client-only>
   <eox-itemfilter
     :items="items"
@@ -72,9 +74,15 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
     :filterProperties="filterProps"
     resultType="cards"
     @select="handleResultClick"
-    style="--form-flex-direction: row"
-  ></eox-itemfilter>
+    style="--form-flex-direction: row; --select-filter-max-items: 10"
+    class="large-margin bottom-margin"
+  >
+    <h6 slot="filterstitle" class="small vertical-margin">Filter Stories:</h6>
+    <h6 slot="resultstitle" class="large large-margin vertical-margin top-padding">Earth Observing Dashboard Stories</h6>
+  </eox-itemfilter>
 </client-only>
+
+<div class="large-space"></div>
 
 <style>
   /* Making sure hero image is not darkened */

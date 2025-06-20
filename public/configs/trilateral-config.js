@@ -64,7 +64,7 @@ export default {
           id: Symbol(),
           type: "internal",
           title: "Tools",
-          layout: { x: 0, y: 0, w: 3, h: 1 },
+          layout: { x: 0, y: 0, w: "3/3/2", h: 1 },
           widget: {
             name: "EodashTools",
             properties: {
@@ -101,6 +101,7 @@ export default {
                 aggregateResults: "collection_group",
                 style: {
                   "--form-flex-direction": "row",
+                  "--select-filter-max-items": 8
                 },
               },
             },
@@ -113,7 +114,7 @@ export default {
                   id: Symbol(),
                   type: "internal",
                   title: "Layers",
-                  layout: { x: 0, y: 1, w: 3, h: 6 },
+                  layout: { x: 0, y: 1, w: "3/3/2", h: 11 },
                   widget: {
                     name: "EodashLayerControl",
                   },
@@ -127,7 +128,7 @@ export default {
               ? {
                   id: "Information",
                   title: "Information",
-                  layout: { x: 9, y: 0, w: 3, h: 6 },
+                  layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 6 },
                   type: "internal",
                   widget: {
                     name: "EodashStacInfo",
@@ -142,7 +143,7 @@ export default {
               ? {
                   id: "Datepicker",
                   type: "internal",
-                  layout: { x: 5, y: 11, w: 2, h: 1 },
+                  layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
@@ -161,7 +162,7 @@ export default {
             return selected
               ? {
                   id: "Buttons",
-                  layout: { x: 8, y: 0, w: 1, h: 1 },
+                  layout: { x: "8/8/9", y: 0, w: 1, h: 2 },
                   title: "Buttons",
                   type: "internal",
                   widget: {
@@ -178,7 +179,7 @@ export default {
                   id: "Processes",
                   type: "internal",
                   title: "Processes",
-                  layout: { x: 9, y: 6, w: 3, h: 6 },
+                  layout: { x: "9/9/10", y: 6, w: "3/3/2", h: 5 },
                   widget: {
                     name: "EodashProcess",
                   },
@@ -219,7 +220,7 @@ export default {
           id: Symbol(),
           type: "internal",
           title: "Tools",
-          layout: { x: 0, y: 0, w: 3, h: 1 },
+          layout: { x: 0, y: 0, w: "3/3/2", h: 1 },
           widget: {
             name: "EodashTools",
             properties: {
@@ -245,18 +246,18 @@ export default {
                   id: "layercontrol-light",
                   type: "internal",
                   title: "Layers",
-                  layout: { x: 0, y: 1, w: 3, h: 3 },
+                  layout: { x: 0, y: 1, w: "3/3/2", h: 10 },
                   widget: {
                     name: "EodashLayerControl",
                     properties: {
                       slider: false,
                       tools: ["datetime", "info", "legend"],
                       cssVars: {
-                        "--list-padding": "0",
+                        "--list-padding": "-8px",
                         "--tools-button-visibility": "none",
                         "--layer-input-visibility": "none",
                         "--layer-type-visibility": "none",
-                        "--padding": "16px",
+                        "--padding": "8px",
                         "--padding-vertical": "16px",
                         "--layer-tools-button-visibility": "none",
                         "--layer-summary-visibility": "none",
@@ -274,7 +275,7 @@ export default {
                   id: "stacinfo-light",
                   type: "internal",
                   title: "Information",
-                  layout: { x: 9, y: 0, w: 3, h: 6 },
+                  layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 11 },
                   widget: {
                     name: "EodashStacInfo",
                     properties: {
@@ -296,7 +297,7 @@ export default {
               ? {
                   id: "Datepicker",
                   type: "internal",
-                  layout: { x: 5, y: 8, w: 2, h: 4 },
+                  layout: { x: 4, y: 7, w: 4, h: 5 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
@@ -308,20 +309,6 @@ export default {
                 }
               : null;
           },
-        },
-        {
-          defineWidget: (selectedSTAC) =>
-            window.eodashStore.actions.includesProcess(selectedSTAC)
-              ? {
-                  id: "Processes",
-                  type: "internal",
-                  title: "Processes",
-                  layout: { x: 9, y: 6, w: 3, h: 5 },
-                  widget: {
-                    name: "EodashProcess",
-                  },
-                }
-              : null,
         },
       ],
     },
@@ -357,13 +344,18 @@ export default {
           id: Symbol(),
           type: "internal",
           title: "Tools",
-          layout: { x: 0, y: 0, w: 3, h: 1 },
+          layout: { x: 0, y: 0, w: "3/3/2", h: 1 },
           widget: {
             name: "EodashTools",
             properties: {
               showLayoutSwitcher: false,
               itemFilterConfig: {
-                enableHighlighting: false,
+                resultType: "cards",
+                style: "--padding: 72px",
+                filtersTitle: "Select an indicator",
+                resultsTitle: "",
+                subTitleProperty: "subtitle",
+                imageProperty: "thumbnail",
                 cssVars: {
                   "--form-flex-direction": "row",
                 },
@@ -376,18 +368,20 @@ export default {
           id: Symbol(),
           type: "internal",
           title: "Tools",
-          layout: { x: 9, y: 0, w: 3, h: 1 },
+          layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 1 },
           widget: {
             name: "EodashTools",
             properties: {
               showLayoutSwitcher: false,
-              indicatorBtnText: "Select an indicator to compare",
+              indicatorBtnText: "Select second indicator",
               itemFilterConfig: {
-                enableHighlighting: false,
                 enableCompare: true,
-                // resultsTitle:"Select an indicator to compare",
+                resultType: "cards",
+                style: "--padding: 72px",
                 filtersTitle: "Select an indicator to compare",
-                // filterProperties: [],
+                resultsTitle: "",
+                subTitleProperty: "subtitle",
+                imageProperty: "thumbnail",
                 cssVars: {
                   "--form-flex-direction": "row",
                 },
@@ -402,7 +396,7 @@ export default {
                   id: Symbol(),
                   type: "internal",
                   title: "Layers",
-                  layout: { x: 0, y: 1, w: 3, h: 6 },
+                  layout: { x: "9/9/10", y: 1, w: "3/3/2", h: 4 },
                   widget: {
                     name: "EodashLayerControl",
                   },
@@ -413,7 +407,7 @@ export default {
         {
           id: Symbol(),
           title: "Comparison Layers",
-          layout: { x: 9, y: 1, w: 3, h: 6 },
+          layout: { x: "9/9/10", y: 1, w: "3/3/2", h: 4 },
           type: "internal",
           widget: {
             name: "EodashLayerControl",
@@ -429,7 +423,7 @@ export default {
                   id: Symbol(),
                   type: "internal",
                   title: "Processes",
-                  layout: { x: 0, y: 7, w: 3, h: 5 },
+                  layout: { x: 9, y: 6, w: "3/3/2", h: 5 },
                   widget: {
                     name: "EodashProcess",
                   },
@@ -441,7 +435,7 @@ export default {
             return selected
               ? {
                   id: "Buttons",
-                  layout: { x: 8, y: 0, w: 1, h: 2 },
+                  layout: { x: "8/8/9", y: 0, w: 1, h: 2 },
                   title: "Buttons",
                   type: "internal",
                   widget: {
@@ -462,7 +456,7 @@ export default {
               ? {
                   id: "Datepicker",
                   type: "internal",
-                  layout: { x: 5, y: 8, w: 2, h: 4 },
+                  layout: { x: 4, y: 7, w: 4, h: 5 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",

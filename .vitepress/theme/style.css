@@ -62,7 +62,8 @@ html {
   box-shadow: 0 1px 5px #15142e0d, 0 4px 16px #15142e1a;
   height: 60px;
 }
-:root {
+:root,
+:root:has(.top-nav.at-top) {
   --vp-nav-height: 60px !important;
 }
 .nav-desktop:after {

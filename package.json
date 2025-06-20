@@ -8,9 +8,10 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@30f4ec5",
-    "@eox/pages-theme-eox": "^0.8.2",
-    "@eox/storytelling": "^1.7.2",
+    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@ec35863",
+    "@eox/pages-theme-eox": "^0.8.5",
+    "@eox/itemfilter": "https://pkg.pr.new/EOX-A/EOxElements/@eox/itemfilter@9cb6fd6",
+    "@eox/storytelling": "https://pkg.pr.new/EOX-A/EOxElements/@eox/storytelling@9cb6fd6",
     "mustache": "^4.2.0",
     "vitepress": "^1.6.3"
   }
