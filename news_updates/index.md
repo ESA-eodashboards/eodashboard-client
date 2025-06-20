@@ -6,7 +6,7 @@ The EO Dashboard is organising and supporting hands-on workshops, hands-on tutor
 
 * **22 – 27 Jun 2025- Living Planet Symposium, Vienna, AT**
   *   Tutorial [D.03.18 From Earth Science to Storytelling](https://lps25.esa.int/programme/programme-session/?id=7A4E4BC9-92EE-41D3-8A3A-62FF63DC914E) -  *build your first dashboard story step-by-step*
-  *   Demonstration in the EO Arena [D.03.32 DEMO - NASA-ESA-JAXA EO Dashboard](https://lps25.esa.int/programme/programme-session/?id=7A613D5A-F956-41EF-B520-EE0A71549B47) - live demo
+  *   Demonstration in the EO Arena [D.03.32 DEMO - NASA-ESA-JAXA EO Dashboard](https://lps25.esa.int/programme/programme-session/?id=7A613D5A-F956-41EF-B520-EE0A71549B47) - *live demo*
 * **29 Sept – 3 Oct 2025- Big Data from Space, Riga, LV**
   *   Tutorial [Hands-on with EO: Creating indicators and stories from open satellite data](https://www.bigdatafromspace2025.org/satellite-event-submission)** -  *develop new indicators from EO mission data and use them to craft a compelling narrative*
 * **4 – 5 Oct 2025 - NASA Space Apps Challenge, Global, hybrid**
@@ -16,7 +16,7 @@ The EO Dashboard is organising and supporting hands-on workshops, hands-on tutor
 
 - **10 Mar 2025 — Survey: AI-Powered Features**  
   We’re exploring expanding the use of machine-learning on EO Dashboard. *Tell us what you’d like to see!* 
-  [>> Fill out the 3-minute questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=0Kxcmu8r102sXH6-H1T0laW1G4eQe39LnE1OD1qEn2xUODdPSEJUV0pKU1E1NFZXNDFIQUs4T1o1Sy4u)
+  [ >> Fill out the 3-minute questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=0Kxcmu8r102sXH6-H1T0laW1G4eQe39LnE1OD1qEn2xUODdPSEJUV0pKU1E1NFZXNDFIQUs4T1o1Sy4u)
 
 - **05 Feb 2025 — Agencies Extend Partnership**  
   ESA, NASA & JAXA sign a joint declaration committing to EO Dashboard through **September 2026**. Future plans involve integrating cutting-edge technologies, incorporating data from new science missions like EarthCARE and PACE, supporting new joint  scientific research, and launching new outreach efforts.
@@ -37,7 +37,7 @@ The EO Dashboard is organising and supporting hands-on workshops, hands-on tutor
 
 ### Share Your Story
 
-Working on something society-relevant with EO data from **ESA, NASA, or JAXA**? Send us your idea at **eodash@esa.int** - the most compelling submissions will be featured on this page and across our channels.
+Working on something society-relevant with EO data from **ESA, NASA, or JAXA**? Send us your idea at **<eodash@esa.int>** - the most compelling submissions will be featured on this page and across our channels.
 
 
 
