@@ -17,7 +17,7 @@ The Earth Observing Dashboard is a joint initiative by the European Space Agency
 
 **Have a story to tell? We'd love to see it.**
 
-With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of storytellers, educators, and explorers. Use the Dashboard to explore the available stories, or create your own data-driven narratives and share them with the world. Submit your ideas or completed stories to eodash@esa.int for a chance to be featured on the Dashboard. visit the **Resources** page for details. 
+With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of storytellers, educators, and explorers. Use the Dashboard to explore the available stories, or create your own data-driven narratives and share them with the world. Submit your ideas or completed stories to **<eodash@esa.int>** for a chance to be featured on the Dashboard. 
 
 <script setup>
   import { ref, onMounted } from 'vue';
