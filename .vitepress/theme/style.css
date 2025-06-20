@@ -18,10 +18,6 @@ body {
 }
   */
 
-body {
-  height: 100vh!important;
-  overflow-y: scroll!important;
-}
 eo-dash a[href="https://eox.at"] img
 {
   display: unset;
@@ -51,10 +47,6 @@ eo-dash .eodash-overlay p {
   --vp-c-text-1: white;
 }
 */
-
-html {
-  overflow: auto;
-}
 
 .top-nav,
 .top-nav nav .button {
