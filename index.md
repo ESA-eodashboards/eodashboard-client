@@ -22,6 +22,7 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
 <script setup>
   import { ref, onMounted } from 'vue';
   import { withBase, useRouter } from 'vitepress';
+  import { trackEvent } from "@eox/pages-theme-eox/src/helpers.js";
 
   const router = useRouter();
   const items = ref([]);
@@ -58,6 +59,7 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
   const handleResultClick = (evt) => {
     const sections = evt.detail.file.split("/");
     const filename = sections[sections.length-1].split(".")[0];
+    trackEvent(['stories', 'select', filename]);
     router.go(withBase(`/story?id=${filename}`));
   };
 </script>

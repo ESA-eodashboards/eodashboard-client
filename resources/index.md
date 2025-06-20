@@ -5,6 +5,7 @@
 <script setup>
   import { ref, onMounted } from 'vue';
   import { withBase, useRouter } from 'vitepress';
+  import { trackEvent } from "@eox/pages-theme-eox/src/helpers.js";
 
   const router = useRouter();
   const items = ref([]);
@@ -40,6 +41,7 @@
 
   // Click event handler
   const handleResultClick = (evt) => {
+    trackEvent(['notebooks', 'select', evt.detail.link]);
     router.go(withBase(`/notebook?id=${evt.detail.link}`));
   };
 </script>
