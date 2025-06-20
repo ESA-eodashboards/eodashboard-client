@@ -15,7 +15,7 @@ Using a storytelling approach, the Dashboard combines interactive visual element
 
 Each story draws on a curated set of indicators derived from Earth observation data, providing context and evidence for real-world phenomena. For those who want to go deeper, the Dashboard enables direct exploration of the underlying datasets, fostering transparency and discovery.
 
-The platform is built with [open-source software](https://eodash.org) and offers simple and accessible [tools](https://eox-a.github.io/EOxElements/?path=/story/elements-eox-storytelling--markdown-with-editor) to allow community contributions so that anyone can create and publish their own stories using EO Dashboard data. 
+The platform is built with [open-source software](https://eodash.org) and offers simple and accessible [tools](https://eox-a.github.io/EOxElements/?path=/story/elements-eox-storytelling--markdown-with-editor) to allow community contributions so that **anyone can create and publish their own stories using EO Dashboard data**. 
 
 
 
@@ -23,4 +23,4 @@ The platform is built with [open-source software](https://eodash.org) and offers
 
 
 
-**Contact**: eodash@esa.int
+**Contact**: <eodash@esa.int>
