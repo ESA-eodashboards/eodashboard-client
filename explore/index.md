@@ -3,11 +3,36 @@ layout: false
 ---
 
 <script setup>
-    import { onMounted } from "vue"
+    import { onMounted, watch } from "vue"
     import { withBase } from 'vitepress'
     import eodashStyle from "@eodash/eodash/webcomponent.css?raw"
+    import { trackEvent } from "@eox/pages-theme-eox/src/helpers.js";
+
+    function waitForEodashStore(callback) {
+        const interval = setInterval(() => {
+            if (window.eodashStore) {
+                clearInterval(interval)
+                callback(window.eodashStore)
+            }
+        }, 100)
+    }
 
     onMounted(() => {
+        waitForEodashStore((eodashStore) => {
+            const indicatorRef = eodashStore?.states?.indicator
+            watch(indicatorRef, (newVal, oldVal) => {
+                if (newVal && newVal !== "") {
+                    trackEvent(['indicators', 'select_indicator', newVal]);
+                }
+            }, { immediate: true })
+            const poiRef = eodashStore?.states?.poi
+            watch(poiRef, (newVal, oldVal) => {
+                if (newVal && newVal !== "") {
+                    trackEvent(['features', 'select_feature', newVal]);
+                }
+            }, { immediate: true })
+        })
+
         const EodashContainer = class extends HTMLElement {
             constructor() {
                 super();
@@ -50,7 +75,7 @@ layout: false
         };
         if (!customElements.get("eodash-container")) {
             customElements.define("eodash-container", EodashContainer);
-        }
+        }  
         // monkeypatching querySelector to get to the EOXMap inside shadowDom for drawtools to attach itself
         document.querySelector = (function(originalQuerySelector) {
         return function(selector) {
