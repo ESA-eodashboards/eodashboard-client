@@ -95,10 +95,10 @@ export default {
                     expanded : true
                   },
                 ],
+                aggregateResults: "collection_group",
                 resultType: "cards",
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
-                aggregateResults: "collection_group",
                 style: {
                   "--form-flex-direction": "row",
                   "--select-filter-max-items": 8
@@ -162,7 +162,7 @@ export default {
             return selected
               ? {
                   id: "Buttons",
-                  layout: { x: "8/8/9", y: 0, w: 1, h: 2 },
+                  layout: { x: "8/8/9", y: 0, w: 1, h: 3 },
                   title: "Buttons",
                   type: "internal",
                   widget: {
@@ -179,7 +179,7 @@ export default {
                   id: "Processes",
                   type: "internal",
                   title: "Processes",
-                  layout: { x: "9/9/10", y: 6, w: "3/3/2", h: 5 },
+                  layout: { x: "9/9/10", y: 6, w: "3/3/2", h: 6 },
                   widget: {
                     name: "EodashProcess",
                   },
@@ -350,14 +350,37 @@ export default {
             properties: {
               showLayoutSwitcher: false,
               itemFilterConfig: {
+                enableHighlighting: false,
+                filterProperties: [
+                  {
+                    keys: ["title", "themes"],
+                    title: "Search",
+                    placeholder: "Search by name",
+                    type: "text",
+                    expanded : true
+                  },
+                  {
+                    key: "themes",
+                    title: "Themes",
+                    placeholder: "Filter by theme",
+                    type: "multiselect",
+                    expanded : true
+                  },
+                  {
+                    key: "tags",
+                    title: "Tags",
+                    placeholder: "Filter by tags",
+                    type: "multiselect",
+                    expanded : true
+                  },
+                ],
+                aggregateResults: "collection_group",
                 resultType: "cards",
-                style: "--padding: 72px",
-                filtersTitle: "Select an indicator",
-                resultsTitle: "",
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
-                cssVars: {
+                style: {
                   "--form-flex-direction": "row",
+                  "--select-filter-max-items": 8
                 },
               },
             },
@@ -367,7 +390,7 @@ export default {
         {
           id: Symbol(),
           type: "internal",
-          title: "Tools",
+          title: "Compare Tools",
           layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 1 },
           widget: {
             name: "EodashTools",
@@ -376,38 +399,57 @@ export default {
               indicatorBtnText: "Select second indicator",
               itemFilterConfig: {
                 enableCompare: true,
+                enableHighlighting: false,
+                filterProperties: [
+                  {
+                    keys: ["title", "themes"],
+                    title: "Search",
+                    placeholder: "Search by name",
+                    type: "text",
+                    expanded : true
+                  },
+                  {
+                    key: "themes",
+                    title: "Themes",
+                    placeholder: "Filter by theme",
+                    type: "multiselect",
+                    expanded : true
+                  },
+                  {
+                    key: "tags",
+                    title: "Tags",
+                    placeholder: "Filter by tags",
+                    type: "multiselect",
+                    expanded : true
+                  },
+                ],
+                aggregateResults: "collection_group",
                 resultType: "cards",
-                style: "--padding: 72px",
-                filtersTitle: "Select an indicator to compare",
-                resultsTitle: "",
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
-                cssVars: {
+                style: {
                   "--form-flex-direction": "row",
+                  "--select-filter-max-items": 8
                 },
+                filtersTitle: "Select an indicator to compare",
+                resultsTitle: "",
               },
             },
           },
         },
         {
-          defineWidget: (selectedSTAC) => {
-            return selectedSTAC
-              ? {
-                  id: Symbol(),
-                  type: "internal",
-                  title: "Layers",
-                  layout: { x: "9/9/10", y: 1, w: "3/3/2", h: 4 },
-                  widget: {
-                    name: "EodashLayerControl",
-                  },
-                }
-              : null;
+          id: Symbol(),
+          type: "internal",
+          title: "Layers",
+          layout: { x: 0, y: 1, w: "3/3/2", h: 11 },
+          widget: {
+            name: "EodashLayerControl",
           },
         },
         {
           id: Symbol(),
           title: "Comparison Layers",
-          layout: { x: "9/9/10", y: 1, w: "3/3/2", h: 4 },
+          layout: { x: "9/9/10", y: 1, w: "3/3/2", h: 11 },
           type: "internal",
           widget: {
             name: "EodashLayerControl",
@@ -417,32 +459,18 @@ export default {
           },
         },
         {
-          defineWidget: (selectedSTAC) =>
-            window.eodashStore.actions.includesProcess(selectedSTAC)
-              ? {
-                  id: Symbol(),
-                  type: "internal",
-                  title: "Processes",
-                  layout: { x: 9, y: 6, w: "3/3/2", h: 5 },
-                  widget: {
-                    name: "EodashProcess",
-                  },
-                }
-              : null,
-        },
-        {
           defineWidget: (selected) => {
             return selected
               ? {
                   id: "Buttons",
-                  layout: { x: "8/8/9", y: 0, w: 1, h: 2 },
+                  layout: { x: "8/8/9", y: 0, w: 1, h: 3 },
                   title: "Buttons",
                   type: "internal",
                   widget: {
                     name: "EodashMapBtns",
                     properties: {
                       compareIndicators: {
-                        fallbackTemplate: "light",
+                        fallbackTemplate: "expert",
                       },
                     },
                   },
