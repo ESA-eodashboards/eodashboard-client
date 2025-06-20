@@ -1,3 +1,7 @@
+---
+layout: page
+footer: null
+---
 
 ## PRIVACY NOTICE AND CONSENT FORM
 

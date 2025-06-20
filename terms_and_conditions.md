@@ -1,3 +1,7 @@
+---
+layout: page
+footer: null
+---
 # TERMS AND CONDITIONS OF THE WEBSITE
 
 (version as of June 22nd 2020)

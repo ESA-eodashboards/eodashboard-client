@@ -1,3 +1,7 @@
+---
+layout: page
+footer: null
+---
 # News & Updates
 
 ## Upcoming Events
