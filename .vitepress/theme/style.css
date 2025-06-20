@@ -18,7 +18,10 @@ body {
 }
   */
 
-
+body {
+  height: 100vh!important;
+  overflow-y: scroll!important;
+}
 eo-dash a[href="https://eox.at"] img
 {
   display: unset;
