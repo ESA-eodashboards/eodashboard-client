@@ -14,6 +14,10 @@ The EO Dashboard is organising and supporting hands-on workshops, hands-on tutor
 
 ## Latest News
 
+- **20 Jun 2025 — EO Dashboard upgraded to new interface**  
+  We have upgraded the eodashboard.org to a completely new interface based on [eodash v5](https://github.com/eodash/eodash). Some collections are still in the process of being fully migrated to offer full expected functionality.
+  
+
 - **10 Mar 2025 — Survey: AI-Powered Features**  
   We’re exploring expanding the use of machine-learning on EO Dashboard. *Tell us what you’d like to see!* 
   [ >> Fill out the 3-minute questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=0Kxcmu8r102sXH6-H1T0laW1G4eQe39LnE1OD1qEn2xUODdPSEJUV0pKU1E1NFZXNDFIQUs4T1o1Sy4u)
