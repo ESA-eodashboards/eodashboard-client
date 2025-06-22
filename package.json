@@ -10,7 +10,7 @@
   "dependencies": {
     "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@4d3558d",
     "@eox/pages-theme-eox": "^0.8.5",
-    "@eox/storytelling": "https://pkg.pr.new/EOX-A/EOxElements/@eox/storytelling@9cb6fd6",
+    "@eox/storytelling": "https://pkg.pr.new/EOX-A/EOxElements/@eox/storytelling@71fb78e",
     "mustache": "^4.2.0",
     "vitepress": "^1.6.3"
   }
