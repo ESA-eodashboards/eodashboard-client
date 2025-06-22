@@ -95,7 +95,7 @@ export default {
                     expanded : true
                   },
                 ],
-                aggregateResults: "collection_group",
+                // aggregateResults: "collection_group",
                 resultType: "cards",
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
@@ -375,7 +375,7 @@ export default {
                     expanded : true
                   },
                 ],
-                aggregateResults: "collection_group",
+                // aggregateResults: "collection_group",
                 resultType: "cards",
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
@@ -423,7 +423,7 @@ export default {
                     expanded : true
                   },
                 ],
-                aggregateResults: "collection_group",
+                // aggregateResults: "collection_group",
                 resultType: "cards",
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
