@@ -100,7 +100,6 @@ export default {
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
                 style: {
-                  "--form-flex-direction": "row",
                   "--select-filter-max-items": 8
                 },
               },
@@ -230,11 +229,13 @@ export default {
                 enableHighlighting: false,
                 resultType: "cards",
                 filtersTitle: "",
-                style: "--padding: 72px",
                 filterProperties: [],
                 resultsTitle: "Explore more indicators",
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
+                cssVars: {
+                  "--filter-display": "none",
+                },
               },
             },
           },
@@ -379,7 +380,6 @@ export default {
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
                 style: {
-                  "--form-flex-direction": "row",
                   "--select-filter-max-items": 8
                 },
               },
@@ -428,7 +428,6 @@ export default {
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
                 style: {
-                  "--form-flex-direction": "row",
                   "--select-filter-max-items": 8
                 },
                 filtersTitle: "Select an indicator to compare",
