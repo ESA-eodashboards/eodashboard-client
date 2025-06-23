@@ -233,6 +233,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
   .navigation .container ul li {
     list-style: none;
     margin: 0px 10px;
+    flex: 1;
   }
   .navigation li a {
     color: black;
