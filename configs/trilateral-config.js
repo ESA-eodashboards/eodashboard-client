@@ -252,7 +252,7 @@ export default {
                     name: "EodashLayerControl",
                     properties: {
                       slider: false,
-                      tools: ["datetime", "info", "legend"],
+                      tools: ["info", "legend"],
                       cssVars: {
                         "--list-padding": "-8px",
                         "--tools-button-visibility": "none",
