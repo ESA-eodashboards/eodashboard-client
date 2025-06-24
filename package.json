@@ -8,9 +8,9 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@ec03e1e",
+    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@fc4799d",
     "@eox/pages-theme-eox": "^0.8.6",
-    "@eox/storytelling": "https://pkg.pr.new/EOX-A/EOxElements/@eox/storytelling@8ebe27c",
+    "@eox/storytelling": "https://pkg.pr.new/EOX-A/EOxElements/@eox/storytelling@5a8c4f6",
     "mustache": "^4.2.0",
     "vitepress": "^1.6.3"
   }
