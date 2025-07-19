@@ -132,7 +132,7 @@ export default {
               ? {
                   id: "Information",
                   title: "Information",
-                  layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 6 },
+                  layout: { x: "8/8/9", y: 0, w: "4/4/3", h: 6 },
                   type: "internal",
                   widget: {
                     name: "EodashStacInfo",
@@ -166,7 +166,7 @@ export default {
             return selected
               ? {
                   id: "Buttons",
-                  layout: { x: "8/8/9", y: 0, w: 1, h: 3 },
+                  layout: { x: "7/7/8", y: 0, w: 1, h: 3 },
                   title: "Buttons",
                   type: "internal",
                   widget: {
@@ -183,7 +183,7 @@ export default {
                   id: "Processes",
                   type: "internal",
                   title: "Processes",
-                  layout: { x: "9/9/10", y: 6, w: "3/3/2", h: 6 },
+                  layout: { x: "8/8/9", y: 6, w: "4/4/3", h: 6 },
                   widget: {
                     name: "EodashProcess",
                   },
