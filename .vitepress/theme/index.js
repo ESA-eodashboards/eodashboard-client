@@ -13,6 +13,7 @@ export default {
       await import("@eox/layout");
       await import("@eox/itemfilter");
       await import ("@eox/map");
+      await import ("@eox/map/src/plugins/advancedLayersAndSources");
       await import ("@eox/chart");
       await import ("@eox/drawtools");
       await import ("@eox/jsonform");
