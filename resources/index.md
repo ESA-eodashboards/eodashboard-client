@@ -121,3 +121,4 @@ The EO Dashboard application is based on the [eodash](https://eodash.org/) ecosy
 
 * [EO Dashboard Data Collections](https://github.com/ESA-eodashboards/eodashboard-catalog/tree/main/collections)
 * [STAC Catalogue](https://radiantearth.github.io/stac-browser/#/external/ESA-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json?.language=en)
+* [Notebook on browsing eodashboard STAC and using linked services](https://eodashboard.org/notebook/?id=notebooks/eodashboard_STAC_access/eodashboard_STAC_access)
