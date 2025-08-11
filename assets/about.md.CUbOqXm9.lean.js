@@ -1,0 +1,1 @@
+import{_ as a,c as t,o,a3 as n}from"./chunks/framework.D-GfVUXH.js";const m=JSON.parse('{"title":"About","description":"","frontmatter":{},"headers":[],"relativePath":"about.md","filePath":"about.md"}'),s={name:"about.md"};function i(r,e,c,d,h,l){return o(),t("div",null,e[0]||(e[0]=[n("",11)]))}const u=a(s,[["render",i]]);export{m as __pageData,u as default};
