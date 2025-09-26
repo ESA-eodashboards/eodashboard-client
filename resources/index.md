@@ -97,6 +97,7 @@ Whether you're an educator, researcher, or simply curious, the Dashboard also se
 
 ## Tutorials
 
+* [Big Data from Space (BiDS) 2025](https://www.bigdatafromspace2025.org/satellite-event-submission) Materials and environment used are available on [GitHub](https://github.com/eurodatacube/2025-BiDS-EODashboard) and [EOxHub](https://hub.eox.at) workspace available on [following link](https://workspace.eodashboardtutorial.hub-otc-sc.eox.at/).
 * [Living Planet Symposium 2025](https://lps25.esa.int/programme/programme-session/?id=7A4E4BC9-92EE-41D3-8A3A-62FF63DC914E) Materials and environment used are available on [GitHub](https://github.com/eurodatacube/2025-LPS-EODashboard).
 * [IGARSS 2024](https://www.2024.ieeeigarss.org/tutorials.php#tut10). Material available on [GitHub](https://github.com/eurodatacube/2024-IGARSS-EODashboard)
 * [IGARSS 2023](https://2023.ieeeigarss.org/tutorials.php#tut111)
