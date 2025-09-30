@@ -50,12 +50,22 @@ export default {
         },
       },
       background: {
-        id: "background-map",
+        id: "background-map-expert",
         type: "internal",
         widget: {
           name: "EodashMap",
           properties: {
             enableCompare: true,
+            zoomToExtent: true,
+            btns: {
+              enableExportMap: true,
+              enableCompareIndicators: true,
+              enableSearch: true,
+            },
+            btnsPosition: {
+              x: "12/8/8",
+              y: 2,
+            }
           },
         },
       },
@@ -130,7 +140,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: "Information",
+                  id: Symbol(),
                   title: "Information",
                   layout: { x: "8/8/9", y: 0, w: "4/4/3", h: 6 },
                   type: "internal",
@@ -145,7 +155,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: "Datepicker",
+                  id: Symbol(),
                   type: "internal",
                   layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
@@ -162,25 +172,10 @@ export default {
           },
         },
         {
-          defineWidget: (selected) => {
-            return selected
-              ? {
-                  id: "Buttons",
-                  layout: { x: "7/7/8", y: 0, w: 1, h: 3 },
-                  title: "Buttons",
-                  type: "internal",
-                  widget: {
-                    name: "EodashMapBtns",
-                  },
-                }
-              : null;
-          },
-        },
-        {
           defineWidget: (selectedSTAC) =>
             window.eodashStore.actions.includesProcess(selectedSTAC)
               ? {
-                  id: "Processes",
+                  id: Symbol(),
                   type: "internal",
                   title: "Processes",
                   layout: { x: "8/8/9", y: 6, w: "4/4/3", h: 6 },
@@ -210,12 +205,22 @@ export default {
         },
       },
       background: {
-        id: "background-map",
+        id: "background-map-light",
         type: "internal",
         widget: {
           name: "EodashMap",
           properties: {
-            enableCompare: true,
+            enableCompare: false,
+            zoomToExtent: true,
+            btns: {
+              enableExportMap: false,
+              enableCompareIndicators: false,
+              enableSearch: true,
+            },
+            btnsPosition: {
+              x: "12/9/9",
+              y: 2,
+            }
           },
         },
       },
@@ -250,7 +255,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: "layercontrol-light",
+                  id: Symbol(),
                   type: "internal",
                   title: "Layers",
                   layout: { x: 0, y: 1, w: "3/3/2", h: 10 },
@@ -280,7 +285,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: "stacinfo-light",
+                  id: Symbol(),
                   type: "internal",
                   title: "Information",
                   layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 11 },
@@ -303,7 +308,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: "Datepicker",
+                  id: Symbol(),
                   type: "internal",
                   layout: { x: 4, y: 7, w: 4, h: 5 },
                   title: "Date",
@@ -338,12 +343,22 @@ export default {
         },
       },
       background: {
-        id: "background-map",
+        id: "background-map-demo",
         type: "internal",
         widget: {
           name: "EodashMap",
           properties: {
-            enableCompare: true,
+            enableCompare: false,
+            zoomToExtent: false,
+            btns: {
+              enableExportMap: false,
+              enableCompareIndicators: false,
+              enableSearch: false,
+            },
+            btnsPosition: {
+              x: 12,
+              y: 2,
+            }
           },
         },
       },
@@ -356,8 +371,6 @@ export default {
           widget: {
             name: "EodashTools",
             properties: {
-              layoutTarget: "expert",
-              layoutIcon: "M2,5V19H8V5H2M9,5V10H15V5H9M16,5V14H22V5H16M9,11V19H15V11H9M16,15V19H22V15H16Z",
               itemFilterConfig: {
                 enableHighlighting: false,
                 resultType: "cards",
@@ -378,7 +391,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: "layercontrol-light",
+                  id: Symbol(),
                   type: "internal",
                   title: "Layers",
                   layout: { x: 0, y: 10, w: "3/3/2", h: 2 },
@@ -412,7 +425,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: "stacinfo-light",
+                  id: Symbol(),
                   type: "internal",
                   title: "Information",
                   layout: { x: "0", y: 1, w: "3/3/2", h: 9 },
@@ -435,7 +448,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: "Datepicker",
+                  id: Symbol(),
                   type: "internal",
                   layout: { x: "9/9/10", y: 7, w: "3/3/2", h: 5 },
                   title: "Date",
@@ -473,7 +486,7 @@ export default {
         },
       },
       background: {
-        id: "background-map",
+        id: "background-map-compare",
         type: "internal",
         widget: {
           name: "EodashMap",
@@ -600,30 +613,10 @@ export default {
           },
         },
         {
-          defineWidget: (selected) => {
-            return selected
-              ? {
-                  id: "Buttons",
-                  layout: { x: "8/8/9", y: 0, w: 1, h: 3 },
-                  title: "Buttons",
-                  type: "internal",
-                  widget: {
-                    name: "EodashMapBtns",
-                    properties: {
-                      compareIndicators: {
-                        fallbackTemplate: "expert",
-                      },
-                    },
-                  },
-                }
-              : null;
-          },
-        },
-        {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: "Datepicker",
+                  id: Symbol(),
                   type: "internal",
                   layout: { x: 4, y: 7, w: 4, h: 5 },
                   title: "Date",
