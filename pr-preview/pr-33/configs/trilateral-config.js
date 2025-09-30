@@ -61,6 +61,7 @@ export default {
               enableExportMap: true,
               enableCompareIndicators: true,
               enableSearch: true,
+              enableBackToPOIs: true,
             },
             btnsPosition: {
               x: "12/8/8",
@@ -492,6 +493,19 @@ export default {
           name: "EodashMap",
           properties: {
             enableCompare: true,
+            zoomToExtent: true,
+            btns: {
+              enableExportMap: false,
+              enableCompareIndicators: {
+                fallbackTemplate: "expert",
+              },
+              enableBackToPOIs: false,
+              enableSearch: true,
+            },
+            btnsPosition: {
+              x: "12/9/9",
+              y: 2,
+            }
           },
         },
       },
