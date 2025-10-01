@@ -1,9 +1,16 @@
+function isMobile() {
+  // only on app start but good for now
+  const minWidth = 768;
+  return window.innerWidth < minWidth || screen.width < minWidth;
+}
+
 export default {
   id: "demo",
   options: {
-    useSubCode: true
+    useSubCode: true,
   },
-  stacEndpoint: "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
+  stacEndpoint:
+    "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
   brand: {
     noLayout: true,
     name: "Earth Observing Dashboard",
@@ -66,7 +73,7 @@ export default {
             btnsPosition: {
               x: "12/8/8",
               y: 2,
-            }
+            },
           },
         },
       },
@@ -80,7 +87,8 @@ export default {
             name: "EodashTools",
             properties: {
               layoutTarget: "light",
-              layoutIcon: "M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z",
+              layoutIcon:
+                "M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z",
               itemFilterConfig: {
                 enableHighlighting: false,
                 filterProperties: [
@@ -89,21 +97,21 @@ export default {
                     title: "Search",
                     placeholder: "Search by name",
                     type: "text",
-                    expanded : true
+                    expanded: isMobile() ? false : true,
                   },
                   {
                     key: "themes",
                     title: "Themes",
                     placeholder: "Filter by theme",
                     type: "multiselect",
-                    expanded : true
+                    expanded: isMobile() ? false : true,
                   },
                   {
                     key: "tags",
                     title: "Tags",
                     placeholder: "Filter by tags",
                     type: "multiselect",
-                    expanded : true
+                    expanded: isMobile() ? false : true,
                   },
                 ],
                 aggregateResults: "collection_group",
@@ -111,7 +119,7 @@ export default {
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
                 style: {
-                  "--select-filter-max-items": 8
+                  "--select-filter-max-items": 8,
                 },
               },
             },
@@ -221,7 +229,7 @@ export default {
             btnsPosition: {
               x: "12/9/9",
               y: 2,
-            }
+            },
           },
         },
       },
@@ -235,7 +243,8 @@ export default {
             name: "EodashTools",
             properties: {
               layoutTarget: "expert",
-              layoutIcon: "M2,5V19H8V5H2M9,5V10H15V5H9M16,5V14H22V5H16M9,11V19H15V11H9M16,15V19H22V15H16Z",
+              layoutIcon:
+                "M2,5V19H8V5H2M9,5V10H15V5H9M16,5V14H22V5H16M9,11V19H15V11H9M16,15V19H22V15H16Z",
               itemFilterConfig: {
                 enableHighlighting: false,
                 aggregateResults: "collection_group",
@@ -359,7 +368,7 @@ export default {
             btnsPosition: {
               x: 12,
               y: 2,
-            }
+            },
           },
         },
       },
@@ -460,7 +469,7 @@ export default {
                             on map (see Analysis Layers)`,
                       hideInputField: true,
                       hideArrows: true,
-                      style: "margin-right: 0"
+                      style: "margin-right: 0",
                     },
                   },
                 }
@@ -505,7 +514,7 @@ export default {
             btnsPosition: {
               x: "12/9/9",
               y: 2,
-            }
+            },
           },
         },
       },
@@ -527,21 +536,21 @@ export default {
                     title: "Search",
                     placeholder: "Search by name",
                     type: "text",
-                    expanded : true
+                    expanded: isMobile() ? false : true,
                   },
                   {
                     key: "themes",
                     title: "Themes",
                     placeholder: "Filter by theme",
                     type: "multiselect",
-                    expanded : true
+                    expanded: isMobile() ? false : true,
                   },
                   {
                     key: "tags",
                     title: "Tags",
                     placeholder: "Filter by tags",
                     type: "multiselect",
-                    expanded : true
+                    expanded: isMobile() ? false : true,
                   },
                 ],
                 aggregateResults: "collection_group",
@@ -549,7 +558,7 @@ export default {
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
                 style: {
-                  "--select-filter-max-items": 8
+                  "--select-filter-max-items": 8,
                 },
               },
             },
@@ -575,21 +584,21 @@ export default {
                     title: "Search",
                     placeholder: "Search by name",
                     type: "text",
-                    expanded : true
+                    expanded: isMobile() ? false : true,
                   },
                   {
                     key: "themes",
                     title: "Themes",
                     placeholder: "Filter by theme",
                     type: "multiselect",
-                    expanded : true
+                    expanded: isMobile() ? false : true,
                   },
                   {
                     key: "tags",
                     title: "Tags",
                     placeholder: "Filter by tags",
                     type: "multiselect",
-                    expanded : true
+                    expanded: isMobile() ? false : true,
                   },
                 ],
                 aggregateResults: "collection_group",
@@ -597,7 +606,7 @@ export default {
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
                 style: {
-                  "--select-filter-max-items": 8
+                  "--select-filter-max-items": 8,
                 },
                 filtersTitle: "Select an indicator to compare",
                 resultsTitle: "",
