@@ -43,8 +43,8 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
     expanded: true
   },
   {
-    "key": 'official',
-    "title": 'Official',
+    "key": 'provider',
+    "title": 'Provider',
     "type":'select',
     expanded: true
   }
