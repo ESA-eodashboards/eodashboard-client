@@ -34,6 +34,16 @@ layout: page
             def: '+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs',
             extent: [-3299207.53, -3333134.03, 3299207.53, 3333134.03],
         },
+        'EPSG:32761': {
+            name: 'EPSG:32761',
+            def: '+proj=stere +lat_0=-90 +lon_0=0 +k=0.994 +x_0=2000000 +y_0=2000000 +datum=WGS84 +units=m +no_defs +type=crs',
+            extent: [-1371213.76, 1405880.72, 5371213.76, 5405880.72],
+        },
+        'ORTHO:320500': {
+            name: 'ORTHO:320500',
+            def: '+proj=ortho +lat_0=-90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs',
+            extent: [-6422528, -6422528, 6422528, 6422528],
+        },
     };
 
     function initWidgets({ detail }) {
@@ -58,6 +68,16 @@ layout: page
           'EPSG:3411',
           PROJDICT['EPSG:3411'].def,
           PROJDICT['EPSG:3411'].extent,
+        );
+        element.registerProjection(
+          'EPSG:32761',
+          PROJDICT['EPSG:32761'].def,
+          PROJDICT['EPSG:32761'].extent,
+        );
+        element.registerProjection(
+          'ORTHO:320500',
+          PROJDICT['ORTHO:320500'].def,
+          PROJDICT['ORTHO:320500'].extent,
         );
       }
     }
