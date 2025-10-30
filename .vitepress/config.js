@@ -27,6 +27,7 @@ export default defineConfig({
       { text: "News & Updates", link: "/news_updates" },
       { text: "Resources", link: "/resources" },
       { text: "Dashboard", link: "/explore" },
+      { text: "ESA Open Science Newsletter", link: "https://assets-eur.mkt.dynamics.com/846bcca8-9413-4d04-822b-7282239af232/digitalassets/standaloneforms/1596564b-a729-f011-8c4d-7c1e52350f4e", target: "_blank" },
       { text: "About", link: "/about" },
     ],
   },
