@@ -169,7 +169,7 @@ export default {
               ? {
                   id: "expert-datepicker",
                   type: "internal",
-                  layout: { x: 4, y: 7, w: 4, h: 5 },
+                  layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
@@ -337,7 +337,7 @@ export default {
               ? {
                   id: "DatePicker",
                   type: "internal",
-                  layout: { x: 4, y: 7, w: 4, h: 5 },
+                  layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
@@ -479,7 +479,7 @@ export default {
               ? {
                   id: "DatePicker",
                   type: "internal",
-                  layout: { x: 4, y: 7, w: 4, h: 5 },
+                  layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
@@ -670,7 +670,7 @@ export default {
               ? {
                   id: "DatePickerCompare",
                   type: "internal",
-                  layout: { x: 4, y: 7, w: 4, h: 5 },
+                  layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
