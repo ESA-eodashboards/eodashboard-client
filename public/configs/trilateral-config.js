@@ -69,6 +69,7 @@ export default {
               enableCompareIndicators: true,
               enableSearch: true,
               enableBackToPOIs: true,
+              enableGlobe: false,
             },
             btnsPosition: {
               x: "12/8/9",
@@ -80,7 +81,7 @@ export default {
       },
       widgets: [
         {
-          id: Symbol(),
+          id: "Tools",
           type: "internal",
           title: "Tools",
           layout: { x: 0, y: 0, w: "3/3/2", h: 2 },
@@ -94,7 +95,7 @@ export default {
                 enableHighlighting: false,
                 filterProperties: [
                   {
-                    keys: ["title", "themes"],
+                    keys: ["title"],
                     title: "Search",
                     placeholder: "Search by name",
                     type: "text",
@@ -130,7 +131,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: Symbol(),
+                  id: "Expert Layers",
                   type: "internal",
                   title: "Layers",
                   layout: { x: 0, y: 1, w: "3/3/2", h: 11 },
@@ -139,6 +140,7 @@ export default {
                     properties: {
                       cssVars: {
                         "--layer-toggle-button-visibility": "flex",
+                        "--list-padding": "1rem",
                       },
                     },
                   },
@@ -150,7 +152,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: Symbol(),
+                  id: "expert-information",
                   title: "Information",
                   layout: { x: "8/8/9", y: 0, w: "4/4/3", h: 6 },
                   type: "internal",
@@ -165,7 +167,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: Symbol(),
+                  id: "expert-datepicker",
                   type: "internal",
                   layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
@@ -185,7 +187,7 @@ export default {
           defineWidget: (selectedSTAC) =>
             window.eodashStore.actions.includesProcess(selectedSTAC)
               ? {
-                  id: Symbol(),
+                  id: "Processes",
                   type: "internal",
                   title: "Processes",
                   layout: { x: "8/8/9", y: 6, w: "4/4/3", h: 6 },
@@ -194,6 +196,18 @@ export default {
                   },
                 }
               : null,
+        },
+        {
+          defineWidget: () =>
+            window.eodashStore.actions.shouldShowChartWidget() && {
+              id: "ProcessResultChart",
+              type: "internal",
+              title: "Chart",
+              layout: { x: 0, y: 0, w: 12, h: 8 },
+              widget: {
+                name: "EodashChart",
+              },
+            },
         },
       ],
     },
@@ -226,6 +240,7 @@ export default {
               enableExportMap: false,
               enableCompareIndicators: false,
               enableSearch: true,
+              enableGlobe: false,
             },
             btnsPosition: {
               x: "12/9/10",
@@ -237,7 +252,7 @@ export default {
       },
       widgets: [
         {
-          id: Symbol(),
+          id: "Tools",
           type: "internal",
           title: "Tools",
           layout: { x: 0, y: 0, w: "3/3/2", h: 2 },
@@ -267,7 +282,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: Symbol(),
+                  id: "Layers",
                   type: "internal",
                   title: "Layers",
                   layout: { x: 0, y: 1, w: "3/3/2", h: 10 },
@@ -297,7 +312,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: Symbol(),
+                  id: "Information",
                   type: "internal",
                   title: "Information",
                   layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 11 },
@@ -320,9 +335,9 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: Symbol(),
+                  id: "DatePicker",
                   type: "internal",
-                  layout: { x: 4, y: 7, w: 4, h: 5 },
+                  layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
@@ -366,6 +381,7 @@ export default {
               enableExportMap: false,
               enableCompareIndicators: false,
               enableSearch: false,
+              enableGlobe: false,
             },
             btnsPosition: {
               x: 12,
@@ -377,7 +393,7 @@ export default {
       },
       widgets: [
         {
-          id: Symbol(),
+          id: "Tools",
           type: "internal",
           title: "Tools",
           layout: { x: 0, y: 0, w: "3/3/2", h: 2 },
@@ -404,7 +420,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: Symbol(),
+                  id: "Layers",
                   type: "internal",
                   title: "Layers",
                   layout: { x: 0, y: 10, w: "3/3/2", h: 2 },
@@ -438,7 +454,7 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: Symbol(),
+                  id: "Information",
                   type: "internal",
                   title: "Information",
                   layout: { x: "0", y: 1, w: "3/3/2", h: 9 },
@@ -461,9 +477,9 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: Symbol(),
+                  id: "DatePicker",
                   type: "internal",
-                  layout: { x: "9/9/10", y: 7, w: "3/3/2", h: 5 },
+                  layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
@@ -513,6 +529,7 @@ export default {
               },
               enableBackToPOIs: false,
               enableSearch: true,
+              enableGlobe: false,
             },
             btnsPosition: {
               x: "12/9/10",
@@ -524,7 +541,7 @@ export default {
       },
       widgets: [
         {
-          id: Symbol(),
+          id: "CompareTools",
           type: "internal",
           title: "Tools",
           layout: { x: 0, y: 0, w: "3/3/2", h: 2 },
@@ -536,7 +553,7 @@ export default {
                 enableHighlighting: false,
                 filterProperties: [
                   {
-                    keys: ["title", "themes"],
+                    keys: ["title"],
                     title: "Search",
                     placeholder: "Search by name",
                     type: "text",
@@ -570,7 +587,7 @@ export default {
         },
         // compare indicators
         {
-          id: Symbol(),
+          id: "CompareTools",
           type: "internal",
           title: "Compare Tools",
           layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 2 },
@@ -584,7 +601,7 @@ export default {
                 enableHighlighting: false,
                 filterProperties: [
                   {
-                    keys: ["title", "themes"],
+                    keys: ["title"],
                     title: "Search",
                     placeholder: "Search by name",
                     type: "text",
@@ -619,23 +636,31 @@ export default {
           },
         },
         {
-          id: Symbol(),
+          id: "Layers",
           type: "internal",
           title: "Layers",
-          layout: { x: 0, y: 1, w: "3/3/2", h: 11 },
+          layout: { x: 0, y: 1, w: "3/3/2", h: 5 },
           widget: {
             name: "EodashLayerControl",
+            properties: {
+              cssVars: {
+                "--list-padding": "1rem"
+              },
+            },
           },
         },
         {
-          id: Symbol(),
+          id: "CompareLayers",
           title: "Comparison Layers",
-          layout: { x: "9/9/10", y: 1, w: "3/3/2", h: 11 },
+          layout: { x: "9/9/10", y: 1, w: "3/3/2", h: 5 },
           type: "internal",
           widget: {
             name: "EodashLayerControl",
             properties: {
               map: "second",
+              cssVars: {
+                "--list-padding": "1rem"
+              },
             },
           },
         },
@@ -643,9 +668,9 @@ export default {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
-                  id: Symbol(),
+                  id: "DatePickerCompare",
                   type: "internal",
-                  layout: { x: 4, y: 7, w: 4, h: 5 },
+                  layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
@@ -658,6 +683,60 @@ export default {
                 }
               : null;
           },
+        },
+        {
+          defineWidget: () =>
+            window.eodashStore.actions.shouldShowChartWidget() && {
+              id: "ProcessResultChart",
+              type: "internal",
+              title: "Chart",
+              layout: { x: 0, y: 0, w: 6, h: 8 },
+              widget: {
+                name: "EodashChart",
+              },
+            },
+        },
+        {
+          defineWidget: () =>
+            window.eodashStore.actions.shouldShowChartWidget(true) && {
+              id: "ProcessResultChartCompare",
+              type: "internal",
+              title: "Compare Chart",
+              layout: { x: 6, y: 0, w: 6, h: 8 },
+              widget: {
+                name: "EodashChart",
+                properties: {
+                  enableCompare: true,
+                },
+              },
+            },
+        },
+        {
+          defineWidget: (selectedSTAC) =>
+            window.eodashStore.actions.includesProcess(selectedSTAC) && {
+              id: "Process",
+              type: "internal",
+              title: "Processes",
+              layout: { x: 0, y: 6, w: "3/3/2", h: 5 },
+              widget: {
+                name: "EodashProcess",
+              },
+            },
+        },
+        {
+          defineWidget: (_, updatedCompareStac) =>
+            window.eodashStore.actions.includesProcess(updatedCompareStac, true) && {
+              id: "CompareMapProcess",
+              type: "internal",
+              title: "Processes",
+              layout: { x: 9, y: 6, w: "3/3/2", h: 5 },
+              widget: {
+                name: "EodashProcess",
+                properties: {
+                  enableCompare: true,
+                },
+              },
+            },
         },
       ],
     },
