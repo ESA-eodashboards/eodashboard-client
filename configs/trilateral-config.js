@@ -685,33 +685,6 @@ export default {
           },
         },
         {
-          defineWidget: () =>
-            window.eodashStore.actions.shouldShowChartWidget() && {
-              id: "ProcessResultChart",
-              type: "internal",
-              title: "Chart",
-              layout: { x: 0, y: 0, w: 6, h: 8 },
-              widget: {
-                name: "EodashChart",
-              },
-            },
-        },
-        {
-          defineWidget: () =>
-            window.eodashStore.actions.shouldShowChartWidget(true) && {
-              id: "ProcessResultChartCompare",
-              type: "internal",
-              title: "Compare Chart",
-              layout: { x: 6, y: 0, w: 6, h: 8 },
-              widget: {
-                name: "EodashChart",
-                properties: {
-                  enableCompare: true,
-                },
-              },
-            },
-        },
-        {
           defineWidget: (selectedSTAC) =>
             window.eodashStore.actions.includesProcess(selectedSTAC) && {
               id: "Process",
@@ -732,6 +705,33 @@ export default {
               layout: { x: 9, y: 6, w: "3/3/2", h: 5 },
               widget: {
                 name: "EodashProcess",
+                properties: {
+                  enableCompare: true,
+                },
+              },
+            },
+        },
+        {
+          defineWidget: () =>
+            window.eodashStore.actions.shouldShowChartWidget() && {
+              id: "ProcessResultChart",
+              type: "internal",
+              title: "Chart",
+              layout: { x: 0, y: 0, w: 6, h: 8 },
+              widget: {
+                name: "EodashChart",
+              },
+            },
+        },
+        {
+          defineWidget: () =>
+            window.eodashStore.actions.shouldShowChartWidget(true) && {
+              id: "ProcessResultChartCompare",
+              type: "internal",
+              title: "Compare Chart",
+              layout: { x: 6, y: 0, w: 6, h: 8 },
+              widget: {
+                name: "EodashChart",
                 properties: {
                   enableCompare: true,
                 },
