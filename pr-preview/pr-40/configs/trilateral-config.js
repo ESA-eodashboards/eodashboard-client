@@ -95,7 +95,7 @@ export default {
                 enableHighlighting: false,
                 filterProperties: [
                   {
-                    keys: ["title", "themes"],
+                    keys: ["title"],
                     title: "Search",
                     placeholder: "Search by name",
                     type: "text",
@@ -140,7 +140,7 @@ export default {
                     properties: {
                       cssVars: {
                         "--layer-toggle-button-visibility": "flex",
-                        "--list-padding": "0.5rem",
+                        "--list-padding": "1rem",
                       },
                     },
                   },
@@ -553,7 +553,7 @@ export default {
                 enableHighlighting: false,
                 filterProperties: [
                   {
-                    keys: ["title", "themes"],
+                    keys: ["title"],
                     title: "Search",
                     placeholder: "Search by name",
                     type: "text",
@@ -601,7 +601,7 @@ export default {
                 enableHighlighting: false,
                 filterProperties: [
                   {
-                    keys: ["title", "themes"],
+                    keys: ["title"],
                     title: "Search",
                     placeholder: "Search by name",
                     type: "text",
@@ -644,7 +644,7 @@ export default {
             name: "EodashLayerControl",
             properties: {
               cssVars: {
-                "--list-padding": "0.5rem"
+                "--list-padding": "1rem"
               },
             },
           },
@@ -659,7 +659,7 @@ export default {
             properties: {
               map: "second",
               cssVars: {
-                "--list-padding": "0.5rem"
+                "--list-padding": "1rem"
               },
             },
           },
