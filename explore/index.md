@@ -32,7 +32,8 @@ layout: false
             }, { immediate: true })
         })
     });
+    const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
 </script>
 
 <NavBar></NavBar>
-<eo-dash style="height:calc(100dvh - 64px);display: block" :config="withBase('/configs/trilateral-config.js')"/>
+<eo-dash style="height:calc(100dvh - 64px);display: block" :config="withBase(`/configs/trilateral-config.js${cacheBuster}`)"/>
