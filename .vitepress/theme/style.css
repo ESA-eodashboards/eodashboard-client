@@ -34,19 +34,6 @@ eo-dash .eodash-overlay p {
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
-/*
-:root,
-.VPNav {
-  --vp-nav-bg-color: var(--vp-c-trilateral-gray);
-  --vp-nav-logo-height: 50px;
-
-  background: var(--vp-c-trilateral-gray);
-}
-.VPNav {
-  --vp-c-brand-1: rgb(191, 228, 253);
-  --vp-c-text-1: white;
-}
-*/
 
 .top-nav,
 .top-nav nav .button {
