@@ -164,9 +164,9 @@ export default {
                     properties: {
                       featured: [
                         "description",
-                        "providers",
                         { key: "eodash:stories" },
-                        { key: "assets", filter: (asset) => !(asset?.roles?.includes("story")) },
+                        "providers",
+                        { key: "assets", filter: (asset) => !(asset?.roles?.includes("story")) && !(asset?.roles?.includes("thumbnail")) },
                         "links"
                       ],
                     }
