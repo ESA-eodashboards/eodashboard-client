@@ -36,4 +36,4 @@ layout: false
 </script>
 
 <NavBar></NavBar>
-<eo-dash style="top: 60px;height:calc(100dvh - 60px);display: block" :config="withBase(`/configs/trilateral-config.js${cacheBuster}`)"/>
+<eo-dash style="display:block;position: fixed;inset: 60px 0 0 0;" :config="withBase(`/configs/trilateral-config.js${cacheBuster}`)"/>
