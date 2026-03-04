@@ -9,11 +9,12 @@ export default {
   options: {
     useSubCode: true,
   },
-  stacEndpoint:
-    "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
-  supportedUpscalingEndpoints: [
-    "openveda.cloud",
-  ],
+  stacEndpoint: {
+    endpoint: "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
+    supportedUpscalingEndpoints: [
+      "openveda.cloud",
+    ],
+  },
   brand: {
     noLayout: true,
     name: "Earth Observing Dashboard",
