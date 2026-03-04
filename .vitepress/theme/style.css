@@ -57,3 +57,30 @@ eo-dash .eodash-overlay p {
   position: absolute;
   right: 24px;
 }
+
+.VPContent {
+  background-color: var(--surface);
+}
+:is(.button,button):not(.chip,.extend).active {
+  background-color: var(--vp-c-brand-3);
+}
+
+/**
+* Trying to make the eox pages default footer as small as possible
+ */
+
+.large-space:not(nav,.row,.grid,table,.tooltip,.list,menu) {
+  display:none;
+}
+
+div.holder.large-padding {
+  padding:0!important;
+}
+div.grid {
+  margin-top: 0.5rem; 
+  margin-bottom: 0.5rem; 
+}
+div.grid.large-line > div > p {
+  margin-top: 0rem; 
+  margin-bottom: 0.2rem;
+}
