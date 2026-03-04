@@ -11,6 +11,9 @@ export default {
   },
   stacEndpoint:
     "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
+  supportedUpscalingEndpoints: [
+    "openveda.cloud",
+  ],
   brand: {
     noLayout: true,
     name: "Earth Observing Dashboard",
@@ -158,6 +161,15 @@ export default {
                   type: "internal",
                   widget: {
                     name: "EodashStacInfo",
+                    properties: {
+                      featured: [
+                        "description",
+                        { key: "eodash:stories" },
+                        "providers",
+                        { key: "assets", filter: (asset) => !(asset?.roles?.includes("story")) && !(asset?.roles?.includes("thumbnail")) },
+                        "links"
+                      ],
+                    }
                   },
                 }
               : null;
