@@ -1,6 +1,6 @@
 ---
 layout: page
-footer: null
+footer: false
 ---
 
 <script setup>
