@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import baseConfig from "@eox/pages-theme-eox/config";
 import { name as packageName } from "../package.json";
-import feedbackSchema from "./theme/feedback_schema.json";
+import feedbackSchema from "../public/configs/feedback_schema.json";
 
 const brandId = packageName.replace("-client", "");
 
