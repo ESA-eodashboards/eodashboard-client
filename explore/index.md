@@ -1,5 +1,6 @@
 ---
 layout: page
+pageClass: feedback-button-eodash
 footer: false
 ---
 
@@ -45,7 +46,7 @@ footer: false
             }
 
             // Run it again after a short delay just in case the map re-renders
-            setTimeout(fixMapHeight, 200)
+            setTimeout(fixMapHeight, 500)
         }
     });
     const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
@@ -53,10 +54,3 @@ footer: false
 
 <eo-dash style="display:block;position: fixed; inset: 60px 0 0 0;
 " :config="withBase(`/configs/trilateral-config.js${cacheBuster}`)"/>
-
-<style>
-eox-feedback-button {
-    right: 0px;
-    bottom: 50px;
-}
-</style>

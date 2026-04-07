@@ -84,3 +84,9 @@ div.grid.large-line > div > p {
   margin-top: 0rem; 
   margin-bottom: 0.2rem;
 }
+
+.feedback-button-eodash eox-feedback-button {
+    right: 0px;
+    bottom: 45px;
+    margin: 0!important;
+}
