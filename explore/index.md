@@ -1,6 +1,6 @@
 ---
 layout: page
-pageClass: feedback-button-eodash
+feedback: false
 footer: false
 ---
 
