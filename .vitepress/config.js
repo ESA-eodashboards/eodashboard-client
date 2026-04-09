@@ -22,6 +22,15 @@ export default defineConfig({
     },
   },
   themeConfig: {
+    theme: {
+      brandConfig: {
+        legal: {
+          about: "/about",
+          termsAndConditions: "/terms_and_conditions",
+          privacyPolicy: "/privacy",
+        },
+      }
+    },
     feedback: {
       endpoint:
         "https://git-issue-creator.eodashboard.hub-otc.eox.at/create-issue?repo=github.com/ESA-eodashboards/issues",
