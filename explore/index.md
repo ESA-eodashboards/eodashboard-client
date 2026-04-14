@@ -1,5 +1,7 @@
 ---
-layout: false
+layout: page
+feedback: false
+footer: false
 ---
 
 <script setup>
@@ -35,5 +37,16 @@ layout: false
     const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
 </script>
 
-<NavBar></NavBar>
-<eo-dash style="display:block;position: fixed;inset: 60px 0 0 0;" :config="withBase(`/configs/trilateral-config.js${cacheBuster}`)"/>
+<eo-dash :config="withBase(`/configs/trilateral-config.js${cacheBuster}`)"/>
+
+<style>
+eo-dash {
+  display: block;
+  height: calc(100dvh - var(--vp-nav-height));
+  width: 100%;
+}
+.VPPage:has(eo-dash) {
+  padding: 0;
+  max-width: unset;
+}
+</style>
