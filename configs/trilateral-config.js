@@ -3,6 +3,8 @@ function isMobile() {
   const minWidth = 768;
   return window.innerWidth < minWidth || screen.width < minWidth;
 }
+const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
+const feedbackSchema = await fetch(`/configs/feedback_schema.json${cacheBuster}`).then(res => res.json());
 
 export default {
   id: "demo",
@@ -42,6 +44,11 @@ export default {
       ],
     },
     footerText: "Demo configuration of eodash client",
+    feedback: {
+      endpoint:
+        "https://git-issue-creator.eodashboard.hub-otc.eox.at/create-issue?repo=github.com/ESA-eodashboards/issues",
+      schema: feedbackSchema,
+    },
   },
   templates: {
     expert: {

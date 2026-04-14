@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as o,al as n}from"./chunks/framework.CtIAIN6Q.js";const m=JSON.parse('{"title":"About","description":"","frontmatter":{},"headers":[],"relativePath":"about.md","filePath":"about.md"}'),s={name:"about.md"};function i(r,e,c,d,h,l){return t(),o("div",null,[...e[0]||(e[0]=[n("",11)])])}const u=a(s,[["render",i]]);export{m as __pageData,u as default};
