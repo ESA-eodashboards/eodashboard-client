@@ -85,4 +85,7 @@ div.grid.large-line > div > p {
   margin-bottom: 0.2rem;
 }
 
-
+eox-feedback-button {
+  position: fixed;
+  z-index: 100;
+}
