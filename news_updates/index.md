@@ -6,7 +6,7 @@ The EO Dashboard is organising and supporting hands-on workshops, hands-on tutor
 
 * **3 - 8 May 2026 - EGU 2026, Vienna, AT**
   * `4 May 2026 10:50-11:10`; EO Dashboard - An open resource for education and information from ESA, NASA and JAXA at `ESA stand in Hall X2, stand X201`; walkthrough of the project, website and accompanying tools by Diego Moglioni.
-  * `6 May 2026 11:50-12:10 & 16:20-16:40`; Turn Satellite Data into Stories with EODashboard team at `ESA stand in Hall X2, stand X201`; Explore possibilities for scientific storytelling on your research use cases or our examples. Learn how to use and contribute data and stories to and from EODashboard ecosystem.
+  * `6 May 2026 11:50-12:10 & 16:20-16:40`; Turn Satellite Data into Stories with EODashboard team at `ESA stand in Hall X2, stand X201`; Explore possibilities for scientific storytelling on your research use cases or our examples. Learn how to use and contribute data and stories to and from EODashboard ecosystem. Check the [eodashboardtutorial workspace](https://workspace.eodashboardtutorial.hub-otc-sc.eox.at/) and try creating your own story.
   * Poster [Building Connected Earth Observation Ecosystems with Agentic AI using EVE](https://meetingorganizer.copernicus.org/EGU26/EGU26-20206.html); Featuring also connection to EODashboard data and stories Thursday, 07 May, 16:15–18:00 (CEST), Display time Thursday, 07 May, 14:00–18:00 Hall X4, X4.68
   * `6 May 2026 10:50-11:10`; RACE Dashboard - EO Based information for citizens `ESA stand in Hall X2, stand X201`; demonstration by Diego Moglioni.
 
