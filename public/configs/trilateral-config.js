@@ -185,7 +185,58 @@ export default {
         },
         {
           defineWidget: (selectedSTAC) => {
-            return selectedSTAC
+            return selectedSTAC?.id === "methanesat-l4-dispersed-area-emissions"
+              ? {
+                  id: "ItemCatalog",
+                  title: "Catalog",
+                  type: "internal",
+                  layout: { x: "9/9/10", y: 6, w: "3/3/2", h: 6 },
+                  widget: {
+                    name: "EodashItemCatalog",
+                    properties: {
+                      useMosaic: false,
+                      layoutTarget: null,
+                      showTitleBlock: false,
+                      hoverProperties: [
+                        "title",
+                        "datetime",
+                        "target_id",
+                        "mean_total_flux",
+                        "distinct_point_source_flux",
+                        "distinct_point_source_flux_sd",
+                      ],
+                      filters: [{
+                        property: "mean_total_flux",
+                        type: "range",
+                        title: "Mean Total Flux",
+                        min: 0,
+                        max: 340000,
+                        step: 1000,
+                        unitLabel: " kg/hr",
+                      }],
+                      filtersTitle: "",
+                      stacEndpoint:
+                        "https://eoapi.workspace.dashboards-operations.aws.hub.eox.at/stac",
+                      searchLimit: 200,
+                      stacItemsStyle: {
+                        "stroke-color": "#ff0000",
+                        "stroke-width": 3,
+                        "fill-color": "#00000020",
+                      },
+                      stacItemsInteractionStyle: {
+                        "stroke-color": "#003170",
+                        "stroke-width": 4,
+                        "fill-color": "#00317020",
+                      },
+                    },
+                  },
+                }
+              : null;
+          },
+        },
+        {
+          defineWidget: (selectedSTAC) => {
+            return selectedSTAC?.id !== "methanesat-l4-dispersed-area-emissions"
               ? {
                   id: "expert-datepicker",
                   type: "internal",
