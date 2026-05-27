@@ -190,7 +190,7 @@ export default {
                 id: "ItemCatalog",
                 title: "Catalog",
                 type: "internal",
-                layout: { x: "9/9/10", y: 6, w: "3/3/2", h: 6 },
+                layout: { x: "8/8/9", y: 6, w: "4/4/3", h: 6 },
                 widget: {
                   name: "EodashItemCatalog",
                   properties: {
