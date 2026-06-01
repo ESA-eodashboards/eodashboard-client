@@ -215,7 +215,7 @@ export default {
                       unitLabel: " kg/hr",
                     },
                     {
-                      key: "datetime",
+                      property: "datetime",
                       title: "Date",
                       type: "range",
                       format: "date",
