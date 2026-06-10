@@ -4,12 +4,6 @@
 
 The EO Dashboard is organising and supporting hands-on workshops, hands-on tutorials, and global open competitions. Come meet the ESA-NASA-JAXA team at these various events. 
 
-* **3 - 8 May 2026 - EGU 2026, Vienna, AT**
-  * `4 May 2026 10:50-11:10`; EO Dashboard - An open resource for education and information from ESA, NASA and JAXA at `ESA stand in Hall X2, stand X201`; walkthrough of the project, website and accompanying tools by Diego Moglioni.
-  * `6 May 2026 11:50-12:10 & 16:20-16:40`; Turn Satellite Data into Stories with EODashboard team at `ESA stand in Hall X2, stand X201`; Explore possibilities for scientific storytelling on your research use cases or our examples. Learn how to use and contribute data and stories to and from EODashboard ecosystem. Check the [eodashboardtutorial workspace](https://workspace.eodashboardtutorial.hub-otc-sc.eox.at/) and try creating your own story.
-  * Poster [Building Connected Earth Observation Ecosystems with Agentic AI using EVE](https://meetingorganizer.copernicus.org/EGU26/EGU26-20206.html); Featuring also connection to EODashboard data and stories Thursday, 07 May, 16:15–18:00 (CEST), Display time Thursday, 07 May, 14:00–18:00 Hall X4, X4.68
-  * `6 May 2026 10:50-11:10`; RACE Dashboard - EO Based information for citizens `ESA stand in Hall X2, stand X201`; demonstration by Diego Moglioni.
-
 * **9 - 14 August 2026 - IGARSS 2026, Washington DC, US**
   * [HD-01; Cloud-Native FAIR EO with NASA, ESA & JAXA Data for Scientific Interactive Storytelling Tutorial](https://2026.ieeeigarss.org/tutorials.php#tut8) -  Hands-on tutorial through the end-to-end process of working with EO data in the cloud to develop EO-based indicators using FAIR workflows, publish the indicators and workflows in a STAC catalogue and disseminate the results via engaging and interactive visual and AI-assisted scientific storytelling;
 
@@ -44,6 +38,12 @@ The EO Dashboard is organising and supporting hands-on workshops, hands-on tutor
 Working on something society-relevant with EO data from **ESA, NASA, or JAXA**? Send us your idea at **<eodash@esa.int>** - the most compelling submissions will be featured on this page and across our channels.
 
 ## Past Events:
+
+* **3 - 8 May 2026 - EGU 2026, Vienna, AT**
+  * `4 May 2026 10:50-11:10`; EO Dashboard - An open resource for education and information from ESA, NASA and JAXA at `ESA stand in Hall X2, stand X201`; walkthrough of the project, website and accompanying tools by Diego Moglioni.
+  * `6 May 2026 11:50-12:10 & 16:20-16:40`; Turn Satellite Data into Stories with EODashboard team at `ESA stand in Hall X2, stand X201`; Explore possibilities for scientific storytelling on your research use cases or our examples. Learn how to use and contribute data and stories to and from EODashboard ecosystem. Check the [eodashboardtutorial workspace](https://workspace.eodashboardtutorial.hub-otc-sc.eox.at/) and try creating your own story.
+  * Poster [Building Connected Earth Observation Ecosystems with Agentic AI using EVE](https://meetingorganizer.copernicus.org/EGU26/EGU26-20206.html); Featuring also connection to EODashboard data and stories Thursday, 07 May, 16:15–18:00 (CEST), Display time Thursday, 07 May, 14:00–18:00 Hall X4, X4.68
+  * `6 May 2026 10:50-11:10`; RACE Dashboard - EO Based information for citizens `ESA stand in Hall X2, stand X201`; demonstration by Diego Moglioni.
 
 * **4 – 5 Oct 2025 - NASA Space Apps Challenge, Global, hybrid**
   *   [Global Hackathon](https://www.spaceappschallenge.org) - *form a team, solve a real-world EO challenge, and build your project with EO Dashboard!*
