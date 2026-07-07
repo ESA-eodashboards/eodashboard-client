@@ -48,11 +48,18 @@ jobs:
           submodules: 'true'
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
-      - if: steps.filter.outputs.unsafe_files == 'false' && github.event.action != 'closed'
+      - name: Build project
+        if: >
+          github.event.action != 'closed' && 
+          (github.event.pull_request.head.repo.full_name == github.repository || steps.filter.outputs.unsafe_files == 'false')
         run: |
           npm install
           npm run build -- --base /pr-preview/pr-${{ github.event.number }}/
       - name: Deploy preview
+        if: >
+          github.event.action == 'closed' || 
+          github.event.pull_request.head.repo.full_name == github.repository || 
+          steps.filter.outputs.unsafe_files == 'false'
         uses: rossjrw/pr-preview-action@ffa7509e91a3ec8dfc2e5536c4d5c1acdf7a6de9 # v1
         with:
           source-dir: .vitepress/dist/
