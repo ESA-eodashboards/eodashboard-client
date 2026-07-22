@@ -6,3 +6,4 @@ node_modules
 .eodash/dist
 .DS_Store
 .eodash
+.env

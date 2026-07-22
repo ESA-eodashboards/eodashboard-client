@@ -205,6 +205,7 @@ export default {
                       "distinct_point_source_flux",
                       "distinct_point_source_flux_sd",
                     ],
+                    staticFilter:true,
                     filters: [{
                       property: "mean_total_flux",
                       type: "range",
