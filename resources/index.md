@@ -115,8 +115,11 @@ Whether you're an educator, researcher, or simply curious, the Dashboard also se
 ## Documentation
 
 EO Dashboard is supported by the three agencies via several activities. Each agency contributes with EO Data, scientific expertise, and technology, including: [NASA’s VEDA](https://www.earthdata.nasa.gov/dashboard/), ESA’s [Euro Data Cube](https://eurodatacube.com) and the [Network of Resources](https://nor-discover.org), and [Jaxa’s Earth-graphy](https://earth.jaxa.jp/en/).
-More information is available on the EO Dashboard Github page.
 The EO Dashboard application is based on the [eodash](https://eodash.org/) ecosystem. For tutorials, data cataloguing and narrative creation [EOxHub Workspaces](https://hub.eox.at) are used.
+
+### Workspace
+
+If you would like to contribute content to EO Dashboard - register at [our workspace](https://workspace.eodashboard.hub-otc.eox.at) and if needed, check the [EOxHub Documentation](https://documentation.hub.eox.at).
 
 ## Data
 

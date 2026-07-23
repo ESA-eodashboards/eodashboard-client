@@ -9,7 +9,7 @@ The EO Dashboard is organising and supporting hands-on workshops, hands-on tutor
 
 ## Latest News
 
-- **29 Jun 2026 — New communty-led story is published**  
+- **29 Jun 2026 — New community-led story is published**  
   Students explore [how aerosols shape clouds using the ESA-JAXA EarthCARE satellite](https://eodashboard.org/story/?id=science-hub-team-1-story), as part of an ESA Science Hub Challenge.
 
 - **20 Jun 2025 — EO Dashboard upgraded to new interface**  
