@@ -48,6 +48,14 @@
 
 # Resources
 
+## ESA Earth Observation Open Science Newsletter
+
+For receiving monthly updates, research highlights or event announcements and updates regarding open science platforms like [EarthCODE](https://earthcode.esa.int/), sign up for the newsletter on the [signup form](https://assets-eur.mkt.dynamics.com/846bcca8-9413-4d04-822b-7282239af232/digitalassets/standaloneforms/1596564b-a729-f011-8c4d-7c1e52350f4e).
+
+## Workspace
+
+If you would like to contribute content to EO Dashboard - register at [our workspace](https://workspace.eodashboard.hub-otc.eox.at) and if needed, check the [EOxHub Documentation](https://documentation.hub.eox.at).
+
 ## Notebooks
 
 Whether you're an educator, researcher, or simply curious, the Dashboard also serves as a valuable educational resource. Many indicators are accompanied by support materials - including example notebooks - that show how the data was produced and how it can be accessed and analyzed further. 
@@ -116,10 +124,6 @@ Whether you're an educator, researcher, or simply curious, the Dashboard also se
 
 EO Dashboard is supported by the three agencies via several activities. Each agency contributes with EO Data, scientific expertise, and technology, including: [NASA’s VEDA](https://www.earthdata.nasa.gov/dashboard/), ESA’s [Euro Data Cube](https://eurodatacube.com) and the [Network of Resources](https://nor-discover.org), and [Jaxa’s Earth-graphy](https://earth.jaxa.jp/en/).
 The EO Dashboard application is based on the [eodash](https://eodash.org/) ecosystem. For tutorials, data cataloguing and narrative creation [EOxHub Workspaces](https://hub.eox.at) are used.
-
-### Workspace
-
-If you would like to contribute content to EO Dashboard - register at [our workspace](https://workspace.eodashboard.hub-otc.eox.at) and if needed, check the [EOxHub Documentation](https://documentation.hub.eox.at).
 
 ## Data
 
