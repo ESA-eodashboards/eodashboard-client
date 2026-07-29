@@ -50,7 +50,7 @@
 
 ## ESA Earth Observation Open Science Newsletter
 
-For receiving monthly updates, research highlights or event announcements and updates regarding open science platforms like [EarthCODE](https://earthcode.esa.int/), sign up for the newsletter on the [signup form](https://assets-eur.mkt.dynamics.com/846bcca8-9413-4d04-822b-7282239af232/digitalassets/standaloneforms/1596564b-a729-f011-8c4d-7c1e52350f4e).
+For receiving monthly updates, research highlights or event announcements and updates regarding open science platforms like [EarthCODE](https://earthcode.esa.int/), sign up using the [Newsletter signup form](https://assets-eur.mkt.dynamics.com/846bcca8-9413-4d04-822b-7282239af232/digitalassets/standaloneforms/1596564b-a729-f011-8c4d-7c1e52350f4e).
 
 ## Workspace
 
