@@ -89,3 +89,7 @@ eox-feedback-button {
   position: fixed;
   z-index: 100;
 }
+
+.large-padding {
+  --_padding: 1rem !important;
+}

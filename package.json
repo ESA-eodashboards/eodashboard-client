@@ -8,11 +8,11 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "@eox/pages-theme-eox": "^1.7.0",
+    "@eox/pages-theme-eox": "^1.9.0",
     "vitepress": "^1.6.3"
   },
   "dependencies": {
     "@eodash/eodash": "^5.8.0",
-    "@eox/storytelling": "^1.10.0"
+    "@eox/storytelling": "^1.13.0"
   }
 }
