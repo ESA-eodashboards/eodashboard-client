@@ -16,6 +16,8 @@ export default {
     supportedUpscalingEndpoints: [
       { url: "openveda.cloud", titilerVersion: 1 }
     ],
+    colormapRegistry:
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/colormaps.json",
   },
   brand: {
     noLayout: true,
