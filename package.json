@@ -12,7 +12,7 @@
     "vitepress": "^1.6.3"
   },
   "dependencies": {
-    "@eodash/eodash": "^5.8.0",
+    "@eodash/eodash": "https://pkg.pr.new/@eodash/eodash@f717bfd",
     "@eox/storytelling": "^1.13.0"
   }
 }
