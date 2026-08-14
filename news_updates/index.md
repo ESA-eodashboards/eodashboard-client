@@ -4,10 +4,10 @@
 
 The EO Dashboard is organising and supporting hands-on workshops, hands-on tutorials, and global open competitions. Come meet the ESA-NASA-JAXA team at these various events. 
 
-* **9 - 14 August 2026 - IGARSS 2026, Washington DC, US**
-  * [HD-01; Cloud-Native FAIR EO with NASA, ESA & JAXA Data for Scientific Interactive Storytelling Tutorial](https://2026.ieeeigarss.org/tutorials.php#tut8) -  Hands-on tutorial through the end-to-end process of working with EO data in the cloud to develop EO-based indicators using FAIR workflows, publish the indicators and workflows in a STAC catalogue and disseminate the results via engaging and interactive visual and AI-assisted scientific storytelling;
-
 ## Latest News
+
+- * **9 - 14 August 2026 - IGARSS 2026, Washington DC, US**
+  * [HD-01; Cloud-Native FAIR EO with NASA, ESA & JAXA Data for Scientific Interactive Storytelling Tutorial](https://2026.ieeeigarss.org/tutorials.php#tut8) -  Hands-on tutorial through the end-to-end process of working with EO data in the cloud to develop EO-based indicators using FAIR workflows, publish the indicators and workflows in a STAC catalogue and disseminate the results via engaging and interactive visual and AI-assisted scientific storytelling. **Event was unfortunately cancelled.**
 
 - **29 Jun 2026 — New community-led story is published**  
   Students explore [how aerosols shape clouds using the ESA-JAXA EarthCARE satellite](https://eodashboard.org/story/?id=science-hub-team-1-story), as part of an ESA Science Hub Challenge.
