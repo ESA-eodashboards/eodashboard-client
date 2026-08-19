@@ -197,7 +197,6 @@ export default {
                   name: "EodashItemCatalog",
                   properties: {
                     useMosaic: false,
-                    layoutTarget: null,
                     showTitleBlock: false,
                     hoverProperties: [
                       "title",
@@ -207,7 +206,7 @@ export default {
                       "distinct_point_source_flux",
                       "distinct_point_source_flux_sd",
                     ],
-                    staticFilter:true,
+                    staticFilters: true,
                     filters: [{
                       property: "mean_total_flux",
                       type: "range",
@@ -222,8 +221,6 @@ export default {
                       title: "Date",
                       type: "range",
                       format: "date",
-                      min: "2024-05-21",
-                      max: "2025-06-15",
                       state: {
                         min: "2024-05-21",
                         max: "2025-06-15",
