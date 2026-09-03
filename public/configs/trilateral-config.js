@@ -229,8 +229,8 @@ export default {
                     datetimeFilter: true,
                     filtersTitle: "",
                     stacEndpoint:
-                      "https://eoapi.workspace.dashboards-operations.aws.hub.eox.at/stac",
-                    searchLimit: 200,
+                      "https://eoapi.workspace.eodashboard-operations.hub-otc-sc.eox.at/stac",
+                    searchLimit: 400,
                     stacItemsStyle: {
                       "stroke-color": "#ff0000",
                       "stroke-width": 3,
