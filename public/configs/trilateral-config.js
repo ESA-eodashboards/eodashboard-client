@@ -8,9 +8,6 @@ const feedbackSchema = await fetch(`/configs/feedback_schema.json${cacheBuster}`
 
 export default {
   id: "demo",
-  options: {
-    useSubCode: true,
-  },
   stacEndpoint: {
     endpoint: "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
     supportedUpscalingEndpoints: [
