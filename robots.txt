@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /story-editor
+Disallow: /story-editor.html
