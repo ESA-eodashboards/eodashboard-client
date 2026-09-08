@@ -14,10 +14,11 @@ export default {
   stacEndpoint: {
     endpoint: "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
     supportedUpscalingEndpoints: [
-      { url: "openveda.cloud", titilerVersion: 1 }
+      { url: "openveda.cloud", titilerVersion: 1, scaleFactor: 2 }
     ],
     colormapRegistry:
       "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/colormaps.json",
+    tileMatrixSetRegistry: "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/tmsRegistry.json",
   },
   brand: {
     noLayout: true,
@@ -83,6 +84,7 @@ export default {
               enableSearch: true,
               enableBackToPOIs: true,
               enableGlobe: false,
+              enableGeolocation: false,
             },
             btnsPosition: {
               x: "12/8/9",
@@ -325,6 +327,7 @@ export default {
               enableCompareIndicators: false,
               enableSearch: true,
               enableGlobe: false,
+              enableGeolocation: false,
             },
             btnsPosition: {
               x: "12/9/10",
@@ -466,6 +469,7 @@ export default {
               enableCompareIndicators: false,
               enableSearch: false,
               enableGlobe: false,
+              enableGeolocation: false,
             },
             btnsPosition: {
               x: 12,
@@ -614,6 +618,7 @@ export default {
               enableBackToPOIs: false,
               enableSearch: true,
               enableGlobe: false,
+              enableGeolocation: false,
             },
             btnsPosition: {
               x: "12/9/10",
