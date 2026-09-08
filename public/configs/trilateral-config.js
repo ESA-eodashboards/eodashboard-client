@@ -14,7 +14,8 @@ export default {
   stacEndpoint: {
     endpoint: "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
     supportedUpscalingEndpoints: [
-      { url: "openveda.cloud", titilerVersion: 1, scaleFactor: 2 }
+      { url: "openveda.cloud", titilerVersion: 1, scaleFactor: 2 },
+      { url: "eoapi.workspace.eodashboard-operations.hub-otc-sc.eox.at", titilerVersion: 2, scaleFactor: 2},
     ],
     colormapRegistry:
       "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/colormaps.json",
