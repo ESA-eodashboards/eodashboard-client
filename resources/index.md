@@ -130,3 +130,27 @@ The EO Dashboard application is based on the [eodash](https://eodash.org/) ecosy
 * [EO Dashboard Data Collections](https://github.com/ESA-eodashboards/eodashboard-catalog/tree/main/collections)
 * [STAC Catalogue](https://radiantearth.github.io/stac-browser/#/external/ESA-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json?.language=en)
 * [Notebook on browsing eodashboard STAC and using linked services](https://eodashboard.org/notebook/?id=notebooks/eodashboard_STAC_access/eodashboard_STAC_access)
+
+## Developer Tooling & MCP Server
+
+The EODash MCP is deployed at [https://eodash.mcp.eox.at](https://eodash.mcp.eox.at).
+
+The MCP server enables AI Agents and users extra context for the EODash ecosystem, assisting developers and data curators with:
+* **Widget Introspection**: Explore built-in eodash widgets, props, and Pinia store bindings (`list_widgets`, `get_widget_details`).
+* **Map Layer Generation**: Convert STAC endpoints, collections, or indicators into complete `<eox-map>` configurations including baselayers, legends, and temporal controls (`generate_map_from_stac`).
+* **Catalog Validation**: Check STAC indicators and collections against eodash schemas and domain rules (`validate_catalog_config`).
+* **Example Discovery**: Search curated examples of collections, indicators, processing and jsonform configurations, Vega charts, and layer styles (`find_examples`).
+
+### MCP Client Setup
+
+Add to your MCP client configuration:
+
+```json
+{
+  "mcpServers": {
+    "eodash": {
+      "url": "https://eodash.mcp.eox.at"
+    }
+  }
+}
+```
