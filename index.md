@@ -1,6 +1,22 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+head:
+  - - link
+    - rel: alternate
+      type: application/json
+      title: STAC Catalog
+      href: https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "DataCatalog",
+        "name": "Earth Observing Dashboard STAC Catalog",
+        "url": "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
+        "description": "STAC of eodashboard.org datasets curated by ESA, NASA, and JAXA."
+      }
 
 hero:
   name: "EARTH OBSERVING DASHBOARD"
@@ -89,6 +105,12 @@ With EO Dashboard, ESA, NASA, and JAXA aim to empower a global community of stor
     <h6 slot="resultstitle" class="large large-margin vertical-margin top-padding">Earth Observing Dashboard Stories</h6>
   </eox-itemfilter>
 </client-only>
+
+<div class="large-space"></div>
+
+### Open Data & STAC Catalog
+
+All underlying Earth Observation datasets featured on the Dashboard are openly accessible via our [STAC (SpatioTemporal Asset Catalog)](/stac) endpoint: [`https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json`](https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json).
 
 <div class="large-space"></div>
 
