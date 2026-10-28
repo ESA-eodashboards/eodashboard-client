@@ -12,7 +12,10 @@
     "vitepress": "^1.6.3"
   },
   "dependencies": {
-    "@eodash/eodash": "^5.9.0",
-    "@eox/storytelling": "^1.13.0"
+    "@eodash/eodash": "5.10.0",
+    "@eox/storytelling": "^1.13.1"
+  },
+  "overrides": {
+    "@eodash/stac": "^0.2.0"
   }
 }
